@@ -62,7 +62,7 @@ If you encounter a bug, crash, or would like to suggest a feature:
 
 ## ⚖️ License
 
-This mod is © [InterPlay] — All rights reserved.
+This mod is © [InterPlay](https://github.com/InterPlay02) — All rights reserved.
 You may not redistribute, or use this mod in any commercial modpacks without explicit permission.
 
 ---
