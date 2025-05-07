@@ -1,0 +1,9 @@
+{
+  "parent": "yourmodid:custom/incubadora_block_six",
+  "textures": {
+    "all": "yourmodid:block/incubadora_block_six",
+    "particle": "yourmodid:block/incubadora_block_six",
+    "incubadora_block_six": "yourmodid:block/incubadora_block_six"
+  },
+  "render_type": "cutout_mipped"
+}

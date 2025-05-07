@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "yourmodid:block/incubation_table_six"
+    },
+    "facing=east": {
+      "model": "yourmodid:block/incubation_table_six",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "yourmodid:block/incubation_table_six",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "yourmodid:block/incubation_table_six",
+      "y": 270
+    }
+  }
+}

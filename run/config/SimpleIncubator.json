@@ -1,0 +1,19 @@
+{
+  "modConfigs": {
+    "hatchTimerMin": 700,
+    "description1": {
+      "1a": "This number determines how long (in ticks) an egg will take to hatch (at minimum).",
+      "1b": "The default value is 700, which is equivalent to 35 seconds."
+    },
+    "hatchTimerMax": 6000,
+    "description2": {
+      "2a": "This number determines how long (in ticks) an egg will take to hatch (at max).",
+      "2b": "The default value is 6000, which is equivalent to five minutes."
+    },
+    "chanceToDropEgg": 0.005,
+    "description3": {
+      "3a": "This number determines how often a mob will drop their spawn egg.",
+      "3b": "The default number is 0.005, which is 0.5% chance to drop. Higher values means higher chances to drop."
+    }
+  }
+}

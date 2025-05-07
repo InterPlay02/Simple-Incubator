@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simple_incubator:block/progress_monitor"
+    },
+    "facing=east": {
+      "model": "simple_incubator:block/progress_monitor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simple_incubator:block/progress_monitor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simple_incubator:block/progress_monitor",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machinery",
+  "category": "redstone",
+  "pattern": [
+    "abc",
+    "ddd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:black_dye"
+    },
+    "b": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "c": {
+      "item": "minecraft:green_dye"
+    },
+    "d": {
+      "item": "minecraft:polished_blackstone_button"
+    },
+    "e": {
+      "item": "minecraft:polished_blackstone_pressure_plate"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:progress_monitor",
+    "count": 1
+  }
+}

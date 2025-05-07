@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "simple_incubator:blocks/storage_middle",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "simple_incubator:storage_middle"
+        }
+      ]
+    }
+  ]
+}

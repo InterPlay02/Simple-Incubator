@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "theWholeTexture": "incubation_table"
+      },
+      "name": "default"
+    }
+  }
+}

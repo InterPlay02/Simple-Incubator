@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "machinery",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BatteryMonitor"
+      },
+      {
+        "value": "CUSTOM:ButtonPanel"
+      },
+      {
+        "value": "CUSTOM:ProgressMonitor"
+      },
+      {
+        "value": "CUSTOM:ChargingStation"
+      },
+      {
+        "value": "CUSTOM:StorageMiddle"
+      },
+      {
+        "value": "CUSTOM:Incubator"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:StorageRight"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IncubationTableItem"
+    },
+    "name": "incubation_table_recipe",
+    "namespace": "mod"
+  }
+}

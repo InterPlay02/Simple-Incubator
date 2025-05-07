@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="simple_incubator"
+version="1.0"
+displayName="Simple Incubator"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="InterPlay"
+description="This mod adds a simple machine that allows one to incubate creature eggs."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.simple_incubator]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.simple_incubator]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
+
+
+
+
+[[mixins]]
+    config="mixins.simple_incubator.json"
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

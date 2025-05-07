@@ -1,0 +1,206 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 2025-05-07 09:31:58
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsDouble()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.DropSpawnEggProcedure.execute(DropSpawnEggProcedure.java:55) ~[%23215!/:?] {re:classloading}
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.DropSpawnEggProcedure.onEntityDeath(DropSpawnEggProcedure.java:29) ~[%23215!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:49) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23141!/:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.common.CommonHooks.onLivingDeath(CommonHooks.java:362) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.die(LivingEntity.java:1371) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.hurt(LivingEntity.java:1237) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.ambient.Bat.hurt(Bat.java:204) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.baseTick(Entity.java:462) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:jade.mixins.json:EntityAccess from mod jade,pl:mixin:APP:corgilib-common.mixins.json:MixinEntity from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:396) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.baseTick(Mob.java:278) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.tick(Entity.java:425) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:jade.mixins.json:EntityAccess from mod jade,pl:mixin:APP:corgilib-common.mixins.json:MixinEntity from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2392) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.tick(Mob.java:351) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.ambient.Bat.tick(Bat.java:116) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:774) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.Level.guardEntityTick(Level.java:570) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.lambda$tick$2(ServerLevel.java:420) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:400) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1037) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.DropSpawnEggProcedure.execute(DropSpawnEggProcedure.java:55) ~[%23215!/:?] {re:classloading}
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.DropSpawnEggProcedure.onEntityDeath(DropSpawnEggProcedure.java:29) ~[%23215!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:49) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23141!/:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.common.CommonHooks.onLivingDeath(CommonHooks.java:362) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.die(LivingEntity.java:1371) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.hurt(LivingEntity.java:1237) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.ambient.Bat.hurt(Bat.java:204) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.baseTick(Entity.java:462) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:jade.mixins.json:EntityAccess from mod jade,pl:mixin:APP:corgilib-common.mixins.json:MixinEntity from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:396) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.baseTick(Mob.java:278) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.tick(Entity.java:425) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:jade.mixins.json:EntityAccess from mod jade,pl:mixin:APP:corgilib-common.mixins.json:MixinEntity from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2392) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.tick(Mob.java:351) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.ambient.Bat.tick(Bat.java:116) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:774) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.Level.guardEntityTick(Level.java:570) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.lambda$tick$2(ServerLevel.java:420) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:bat (net.minecraft.world.entity.ambient.Bat)
+	Entity ID: 940
+	Entity Name: Morcego
+	Entity's Exact location: 43.02, 3.03, -113.54
+	Entity's Block location: World: (43,3,-114), Section: (at 11,3,14 in 2,0,-8; chunk contains blocks 32,-64,-128 to 47,319,-113), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Entity's Momentum: -0.19, -0.10, 0.01
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.Level.guardEntityTick(Level.java:570) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.lambda$tick$2(ServerLevel.java:420) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:400) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1037) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/23, l='ServerLevel[Full Test]', x=68.50, y=67.00, z=-27.50]]
+	Chunk stats: 3025
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (64,80,-32), Section: (at 0,0,0 in 4,5,-2; chunk contains blocks 64,-64,-32 to 79,319,-17), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Level time: 1059 game time, 1059 day time
+	Level name: Full Test
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Level weather: Rain time: 76269 (now: false), thunder time: 143463 (now: false)
+	Known server brands: neoforge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 302
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1718) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel from mod glitchcore,pl:mixin:APP:ohthetreesyoullgrow.mixins.json:MixinServerLevel from mod ohthetreesyoullgrow,pl:mixin:APP:corgilib-common.mixins.json:MixinServerLevel from mod corgilib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1040) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.65-minecraft.jar%23198!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 247749312 bytes (236 MiB) / 2134900736 bytes (2036 MiB) up to 8577351680 bytes (8180 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 0
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.79
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon RX 6600 XT
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 8176.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.13031.3015
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MiB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.67
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MiB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.67
+	Memory slot #3 type: DDR4
+	Virtual memory max (MiB): 38350.65
+	Virtual memory used (MiB): 24201.61
+	Swap memory total (MiB): 5632.00
+	Swap memory used (MiB): 87.96
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 21572.17, total: 228102.00
+	Space in storage for workdir (MiB): available: 161977.08, total: 915698.00
+	JVM Flags: 0 total; 
+	Loaded Shaderpack: ComplementaryReimagined_r5.4.zip
+		Profile: Custom (+32 options changed by user)
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/23, l='ServerLevel[Full Test]', x=68.50, y=67.00, z=-27.50]]
+	Active Data Packs: vanilla, mod_data, mod/sodium, mod/iris, mod/terrablender (incompatible), mod/fabric_renderer_api_v1, mod/fabric_api_base, mod/glitchcore (incompatible), mod/sodium_extra, mod/biomesoplenty (incompatible), mod/jade (incompatible), mod/geckolib, mod/playeranimator, mod/ohthetreesyoullgrow (incompatible), mod/jei (incompatible), mod/fabric_rendering_data_attachment_v1, mod/corgilib (incompatible), mod/biomeswevegone, mod/neoforge, mod/kleiders_custom_renderer, mod/simple_incubator, mod/betteradvancements (incompatible), mod/fabric_block_view_api_v2
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/betteradvancements (incompatible), mod/biomesoplenty (incompatible), mod/biomeswevegone, mod/corgilib (incompatible), mod/fabric_api_base, mod/fabric_block_view_api_v2, mod/fabric_renderer_api_v1, mod/fabric_rendering_data_attachment_v1, mod/geckolib, mod/glitchcore (incompatible), mod/iris, mod/jade (incompatible), mod/jei (incompatible), mod/kleiders_custom_renderer, mod/neoforge, mod/ohthetreesyoullgrow (incompatible), mod/playeranimator, mod/simple_incubator, mod/sodium, mod/sodium_extra, mod/terrablender (incompatible), mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -1169864287592082937
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.65
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.65-minecraft.jar                    |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		iris-neoforge-1.8.6+mc1.21.1.jar                  |Iris                          |iris                          |1.8.6+mc1.21.1      |Manifest: NOSIGNATURE
+		TerraBlender-neoforge-1.21.1-4.1.0.8.jar          |TerraBlender                  |terrablender                  |4.1.0.8             |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+acb05a3919.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+acb05a3919    |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		GlitchCore-neoforge-1.21.1-2.1.0.0.jar            |GlitchCore                    |glitchcore                    |2.1.0.0             |Manifest: NOSIGNATURE
+		sodium-extra-neoforge-0.6.0+mc1.21.1.jar          |Sodium Extra                  |sodium_extra                  |0.6.0+mc1.21.1      |Manifest: NOSIGNATURE
+		BiomesOPlenty-neoforge-1.21.1-21.1.0.8.jar        |Biomes O' Plenty              |biomesoplenty                 |21.1.0.8            |Manifest: NOSIGNATURE
+		Jade-1.21.1-NeoForge-15.9.2.jar                   |Jade                          |jade                          |15.9.2+neoforge     |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.7.3.jar                |GeckoLib 4                    |geckolib                      |4.7.3               |Manifest: NOSIGNATURE
+		player-animation-lib-forge-2.0.1+1.21.1.jar       |Player Animator               |playeranimator                |2.0.1+1.21.1        |Manifest: NOSIGNATURE
+		Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.0.6.jar |Oh The Trees You'll Grow      |ohthetreesyoullgrow           |5.0.6               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.21.0.247.jar               |Just Enough Items             |jei                           |19.21.0.247         |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		Corgilib-NeoForge-1.21.1-5.0.0.3.jar              |CorgiLib                      |corgilib                      |5.0.0.3             |Manifest: NOSIGNATURE
+		Oh-The-Biomes-Weve-Gone-NeoForge-2.3.6.jar        |Oh The Biomes We've Gone      |biomeswevegone                |2.3.6               |Manifest: NOSIGNATURE
+		sodium-neoforge-0.6.1+mc1.21.1.jar                |Sodium                        |sodium                        |0.6.1+mc1.21.1      |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |NeoForge                      |neoforge                      |21.1.65             |Manifest: NOSIGNATURE
+		Kleiders Custom Renderer API 7.2.0 1.21.1.jar     |Kleiders Custom Renderer      |kleiders_custom_renderer      |7.2.0               |Manifest: NOSIGNATURE
+		main                                              |Simple Incubator              |simple_incubator              |1.0                 |Manifest: NOSIGNATURE
+		BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar   |Better Advancements           |betteradvancements            |0.4.3.21            |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+	Crash Report UUID: a932e3bc-9c48-4102-b820-d1ad4c6d115c
+	FML: 4.0.24
+	NeoForge: 21.1.65

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "yourmodid:blocks/incubation_table_six",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yourmodid:incubadora_item"
+        }
+      ]
+    }
+  ]
+}

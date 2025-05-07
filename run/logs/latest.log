@@ -1,0 +1,394 @@
+[07May2025 15:21:17.812] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.1.65, --assetIndex, 17, --assetsDir, C:\\Users\\Rodrigo\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.neoForgeVersion, 21.1.65, --fml.fmlVersion, 4.0.24, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
+[07May2025 15:21:17.816] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[07May2025 15:21:17.817] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[07May2025 15:21:18.096] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[07May2025 15:21:18.194] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[07May2025 15:21:18.370] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[07May2025 15:21:18.535] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Rodrigo/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23131!/ Service=ModLauncher Env=CLIENT
+[07May2025 15:21:18.630] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon RX 6600 XT GL version 4.6.0 Core Profile Context 25.3.1.250220, ATI Technologies Inc.
+[07May2025 15:21:18.952] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 9 dependencies adding them to mods collection
+[07May2025 15:21:20.142] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[07May2025 15:21:20.145] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[07May2025 15:21:20.193] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 21.1.65, --gameDir, ., --assetsDir, C:\Users\Rodrigo\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[07May2025 15:21:20.296] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.297] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.297] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.298] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.299] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.303] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.303] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.304] [main/WARN] [mixin/]: Reference map 'glitchcore.refmap.json' for glitchcore.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.305] [main/WARN] [mixin/]: Reference map 'glitchcore.refmap.json' for glitchcore.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.365] [main/INFO] [Sodium Extra Config/]: Loaded configuration file for Sodium Extra: 36 options available, 0 override(s) found
+[07May2025 15:21:20.366] [main/WARN] [mixin/]: Reference map 'sodium-extra.refmap.json' for sodium-extra.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.366] [main/WARN] [mixin/]: Reference map 'biomesoplenty.refmap.json' for biomesoplenty.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.367] [main/WARN] [mixin/]: Reference map 'biomesoplenty.refmap.json' for biomesoplenty.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.367] [main/WARN] [mixin/]: Reference map 'geckolib.refmap.json' for geckolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[07May2025 15:21:20.390] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 43 options available, 1 override(s) found
+[07May2025 15:21:20.884] [main/WARN] [mixin/]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
+[07May2025 15:21:20.886] [main/WARN] [mixin/]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
+[07May2025 15:21:20.887] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[07May2025 15:21:20.888] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[07May2025 15:21:20.888] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
+[07May2025 15:21:20.891] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
+[07May2025 15:21:21.015] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.FogRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[07May2025 15:21:21.016] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.ClientLevelMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[07May2025 15:21:21.016] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[07May2025 15:21:21.145] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[07May2025 15:21:23.141] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 416 milliseconds
+[07May2025 15:21:23.309] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[07May2025 15:21:25.742] [pool-19-thread-1/WARN] [mixin/]: Method overwrite conflict for scheduleRandomTick in corgilib-common.mixins.json:chunk.MixinChunkAccess from mod corgilib, previously written by dev.corgitaco.ohthetreesyoullgrow.mixin.chunk.MixinChunkAccess. Skipping method.
+[07May2025 15:21:25.742] [pool-19-thread-1/WARN] [mixin/]: Method overwrite conflict for getScheduledRandomTicks in corgilib-common.mixins.json:chunk.MixinChunkAccess from mod corgilib, previously written by dev.corgitaco.ohthetreesyoullgrow.mixin.chunk.MixinChunkAccess. Skipping method.
+[07May2025 15:21:28.046] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07May2025 15:21:28.047] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07May2025 15:21:28.049] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07May2025 15:21:28.050] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07May2025 15:21:28.051] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07May2025 15:21:28.204] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Modding/Simple%20Incubator/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23198!/assets/.mcassetsroot' uses unexpected schema
+[07May2025 15:21:28.204] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Modding/Simple%20Incubator/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23198!/data/.mcassetsroot' uses unexpected schema
+[07May2025 15:21:28.239] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07May2025 15:21:28.245] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[07May2025 15:21:28.393] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[07May2025 15:21:28.460] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Vendor: ATI Technologies Inc.
+[07May2025 15:21:28.461] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Renderer: AMD Radeon RX 6600 XT
+[07May2025 15:21:28.461] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Version: 4.6.0 Core Profile Context 25.3.1.250220
+[07May2025 15:21:28.775] [Render thread/INFO] [Iris/]: Debug functionality is disabled.
+[07May2025 15:21:28.785] [Render thread/INFO] [Iris/]: OpenGL 4.5 detected, enabling DSA.
+[07May2025 15:21:29.102] [Render thread/INFO] [Iris/]: Profile: Custom (+32 options changed by user)
+[07May2025 15:21:29.580] [ForkJoinPool.commonPool-worker-13/WARN] [Iris/]: [Iris Update Check] This version doesn't have an update index, skipping.
+[07May2025 15:21:29.693] [Render thread/INFO] [Iris/]: Using shaderpack: ComplementaryReimagined_r5.4.zip
+[07May2025 15:21:29.918] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.65, for MC 1.21.1
+[07May2025 15:21:30.169] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[07May2025 15:21:30.171] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 1.341 ms
+[07May2025 15:21:30.175] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone items
+[07May2025 15:21:30.326] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Blocks
+[07May2025 15:21:30.361] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Wood
+[07May2025 15:21:30.362] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Block Entities
+[07May2025 15:21:30.362] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Entities
+[07May2025 15:21:30.363] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Creative Tabs
+[07May2025 15:21:30.366] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Sounds
+[07May2025 15:21:30.366] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Block Predicate
+[07May2025 15:21:30.368] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone State Providers
+[07May2025 15:21:30.370] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Tree Decorators
+[07May2025 15:21:30.376] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Custom Features
+[07May2025 15:21:30.377] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Structure Pieces
+[07May2025 15:21:30.378] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Custom Structure Types
+[07May2025 15:21:30.380] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Configured Features
+[07May2025 15:21:30.387] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Creating and Registering Overworld Vegetation Configured Features
+[07May2025 15:21:30.424] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Tree Configured Features
+[07May2025 15:21:30.424] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Creating and Registering Vanilla Configured Features
+[07May2025 15:21:30.427] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes You'll Go Overworld Configured Features
+[07May2025 15:21:30.429] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Placed Features
+[07May2025 15:21:30.434] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Creating and Registering Overworld Tree Placed Features
+[07May2025 15:21:30.437] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Creating and Registering Overworld Vegetation Placed Features
+[07May2025 15:21:30.438] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Creating and Registering Vanilla Placed Features
+[07May2025 15:21:30.438] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Custom Surface Rules
+[07May2025 15:21:30.443] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Template Pools
+[07May2025 15:21:30.448] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biome's We've Gone Village Template Pools
+[07May2025 15:21:30.449] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Poi Types
+[07May2025 15:21:30.449] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Villager Professions
+[07May2025 15:21:30.450] [modloading-worker-0/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Registering Oh The Biomes We've Gone Custom Structure Processors
+[07May2025 15:21:31.832] [Render thread/INFO] [Iris/]: Hardware information:
+[07May2025 15:21:31.832] [Render thread/INFO] [Iris/]: CPU: 16x AMD Ryzen 7 5800X 8-Core Processor 
+[07May2025 15:21:31.833] [Render thread/INFO] [Iris/]: GPU: AMD Radeon RX 6600 XT (Supports OpenGL 4.6.0 Core Profile Context 25.3.1.250220)
+[07May2025 15:21:31.833] [Render thread/INFO] [Iris/]: OS: Windows 11 (10.0)
+[07May2025 15:21:31.958] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[07May2025 15:21:32.314] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/sodium, mod/iris, mod/terrablender, mod/fabric_renderer_api_v1, mod/fabric_api_base, mod/glitchcore, mod/sodium_extra, mod/biomesoplenty, mod/jade, mod/geckolib, mod/playeranimator, mod/ohthetreesyoullgrow, mod/jei, mod/fabric_rendering_data_attachment_v1, mod/corgilib, mod/biomeswevegone, mod/neoforge, mod/kleiders_custom_renderer, mod/simple_incubator, mod/betteradvancements, mod/fabric_block_view_api_v2, file/Leon's Spawneggs Backport.zip
+[07May2025 15:21:32.486] [Worker-Main-12/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[07May2025 15:21:32.486] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[07May2025 15:21:32.549] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[07May2025 15:21:32.551] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[07May2025 15:21:32.551] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_primary to index 1 for type OVERWORLD
+[07May2025 15:21:32.551] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_secondary to index 2 for type OVERWORLD
+[07May2025 15:21:32.552] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_rare to index 3 for type OVERWORLD
+[07May2025 15:21:32.553] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:nether_common to index 1 for type NETHER
+[07May2025 15:21:32.553] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:nether_rare to index 2 for type NETHER
+[07May2025 15:21:32.805] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_0 to index 4 for type OVERWORLD
+[07May2025 15:21:32.805] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_1 to index 5 for type OVERWORLD
+[07May2025 15:21:32.805] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_2 to index 6 for type OVERWORLD
+[07May2025 15:21:34.414] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.vanilla.VanillaPlugin
+[07May2025 15:21:34.471] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.vanilla.VanillaPlugin in 54.88 ms
+[07May2025 15:21:34.482] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.vanilla.VanillaPlugin in 65.89 ms
+[07May2025 15:21:34.482] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.universal.UniversalPlugin
+[07May2025 15:21:34.489] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.universal.UniversalPlugin in 6.386 ms
+[07May2025 15:21:34.490] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.universal.UniversalPlugin in 6.734 ms
+[07May2025 15:21:34.490] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.debug.DebugPlugin
+[07May2025 15:21:34.493] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.debug.DebugPlugin in 2.500 ms
+[07May2025 15:21:34.493] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.debug.DebugPlugin in 2.905 ms
+[07May2025 15:21:34.493] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.core.CorePlugin
+[07May2025 15:21:34.501] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.core.CorePlugin in 6.432 ms
+[07May2025 15:21:34.501] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.core.CorePlugin in 6.655 ms
+[07May2025 15:21:34.501] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.access.AccessibilityPlugin
+[07May2025 15:21:34.507] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.access.AccessibilityPlugin in 5.914 ms
+[07May2025 15:21:34.508] [Worker-Main-11/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.access.AccessibilityPlugin in 6.198 ms
+[07May2025 15:21:34.601] [Render thread/INFO] [CorgiLib/]: Initializing network...
+[07May2025 15:21:34.605] [Render thread/INFO] [CorgiLib/]: Initialized network!
+[07May2025 15:21:34.726] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[07May2025 15:21:34.727] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[07May2025 15:21:34.784] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (High Definition Audio Device)
+[07May2025 15:21:34.785] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[07May2025 15:21:34.884] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[07May2025 15:21:34.905] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/signs.png-atlas
+[07May2025 15:21:34.905] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[07May2025 15:21:34.907] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[07May2025 15:21:34.909] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[07May2025 15:21:34.916] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[07May2025 15:21:34.916] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[07May2025 15:21:34.916] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[07May2025 15:21:34.916] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[07May2025 15:21:35.011] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[07May2025 15:21:35.012] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[07May2025 15:21:35.013] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[07May2025 15:21:35.013] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[07May2025 15:21:35.013] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[07May2025 15:21:35.039] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[07May2025 15:21:35.097] [Render thread/WARN] [dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry/]: [WARNING FOR MOD DEVS] Animation player_animation/bite.json is in wrong directory: "player_animation", please place it in "player_animations".
+[07May2025 15:21:35.107] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[07May2025 15:21:35.109] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[07May2025 15:21:35.129] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[07May2025 15:21:35.192] [Render thread/WARN] [Iris/]: Failed to resolve uniform inPaleGarden, reason: Unknown variable: BIOME_PALE_GARDEN ( = FunctionCall{smooth {[Number{54}, FunctionCall{if {[FunctionCall{in {[Id{biome}, Id{BIOME_PALE_GARDEN}]} }, Number{1}, Number{0}]} }, Number{15}, Number{15}]} })
+java.lang.RuntimeException: Unknown variable: BIOME_PALE_GARDEN
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:225) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpressionInternal(ExpressionResolver.java:81) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:140) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:196) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpressionInternal(ExpressionResolver.java:81) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:140) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:127) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:196) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpressionInternal(ExpressionResolver.java:81) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:140) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:196) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpression(ExpressionResolver.java:50) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.uniforms.custom.CustomUniforms.<init>(CustomUniforms.java:60) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.uniforms.custom.CustomUniforms$Builder.build(CustomUniforms.java:332) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.uniforms.custom.CustomUniforms$Builder.build(CustomUniforms.java:343) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.pipeline.IrisRenderingPipeline.<init>(IrisRenderingPipeline.java:282) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.Iris.createPipeline(Iris.java:616) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.pipeline.PipelineManager.preparePipeline(PipelineManager.java:33) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.Iris.onLoadingComplete(Iris.java:150) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.gui.screens.TitleScreen.handler$zch000$iris$firstInit(TitleScreen.java:525) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.gui.screens.TitleScreen.init(TitleScreen.java:157) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.gui.screens.Screen.init(Screen.java:317) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.setScreen(Minecraft.java:1057) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.lambda$buildInitialScreens$9(Minecraft.java:664) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.onGameLoadFinished(Minecraft.java:650) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.onResourceLoadFinished(Minecraft.java:641) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.lambda$new$7(Minecraft.java:629) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.Util.ifElse(Util.java:513) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.lambda$new$8(Minecraft.java:623) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.client.loading.NeoForgeLoadingOverlay.render(NeoForgeLoadingOverlay.java:145) ~[neoforge-21.1.65-minecraft.jar%23199!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1081) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1195) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?]
+[07May2025 15:22:12.074] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:simple_incubator:blocks/incubation_table_six - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: yourmodid:incubadora_item
+[07May2025 15:22:12.413] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 2273 recipes
+[07May2025 15:22:12.609] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2390 advancements
+[07May2025 15:22:13.184] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
+[07May2025 15:22:13.190] [Render thread/INFO] [snownee.jade.Jade/]: LootTableMineableCollector took 5.301 ms
+[07May2025 15:22:13.242] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[07May2025 15:22:13.242] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[07May2025 15:22:13.348] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for biomesoplenty:rainforest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[07May2025 15:22:13.349] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for biomesoplenty:rocky_rainforest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[07May2025 15:22:13.367] [Server thread/ERROR] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: The following entities have not registered to the RegisterSpawnPlacementsEvent, but a spawn entry was found. This will mean that the entity doesn't have restrictions on its spawn location, please register a spawn placement for the entity, you can register with NO_RESTRICTIONS if you don't want any restrictions.
+	 - minecraft:allay
+[07May2025 15:22:13.912] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[07May2025 15:22:13.912] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[07May2025 15:22:15.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[07May2025 15:22:15.409] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando área de nascimento: 0%
+[07May2025 15:22:15.569] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 393 ms
+[07May2025 15:22:15.571] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[07May2025 15:22:15.634] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 14, from 10
+[07May2025 15:22:15.634] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[07May2025 15:22:16.381] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
+[07May2025 15:22:16.589] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:3ca6f360] logged in with entity id 57 at (-1288.437458338702, 93.0, -788.9365495966911)
+[07May2025 15:22:16.663] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev entrou no jogo
+[07May2025 15:22:16.673] [Render thread/INFO] [Iris/]: Reloading pipeline on dimension change: minecraft:overworld => minecraft:overworld
+[07May2025 15:22:16.674] [Render thread/INFO] [Iris/]: Destroying pipeline minecraft:overworld
+[07May2025 15:22:16.685] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[07May2025 15:22:16.688] [Render thread/WARN] [Iris/]: Failed to resolve uniform inPaleGarden, reason: Unknown variable: BIOME_PALE_GARDEN ( = FunctionCall{smooth {[Number{54}, FunctionCall{if {[FunctionCall{in {[Id{biome}, Id{BIOME_PALE_GARDEN}]} }, Number{1}, Number{0}]} }, Number{15}, Number{15}]} })
+java.lang.RuntimeException: Unknown variable: BIOME_PALE_GARDEN
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:225) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpressionInternal(ExpressionResolver.java:81) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:140) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:196) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpressionInternal(ExpressionResolver.java:81) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:140) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:127) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:196) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpressionInternal(ExpressionResolver.java:81) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveCallExpression(ExpressionResolver.java:140) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpressionInternal(ExpressionResolver.java:196) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/kroppeb.stareval.resolver.ExpressionResolver.resolveExpression(ExpressionResolver.java:50) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.uniforms.custom.CustomUniforms.<init>(CustomUniforms.java:60) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.uniforms.custom.CustomUniforms$Builder.build(CustomUniforms.java:332) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.uniforms.custom.CustomUniforms$Builder.build(CustomUniforms.java:343) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.pipeline.IrisRenderingPipeline.<init>(IrisRenderingPipeline.java:282) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.Iris.createPipeline(Iris.java:616) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/iris@1.8.6+mc1.21.1/net.irisshaders.iris.pipeline.PipelineManager.preparePipeline(PipelineManager.java:33) ~[iris-neoforge-1.8.6+mc1.21.1.jar%23205!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.handler$zbk000$iris$resetPipeline(Minecraft.java:4040) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.updateLevelInEngines(Minecraft.java) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.setLevel(Minecraft.java:2117) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.multiplayer.ClientPacketListener.handleLogin(ClientPacketListener.java:421) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ClientboundLoginPacket.handle(ClientboundLoginPacket.java:67) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ClientboundLoginPacket.handle(ClientboundLoginPacket.java:14) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:26) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:111) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1155) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.65-minecraft.jar%23198!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?]
+[07May2025 15:22:17.116] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
+[07May2025 15:22:17.369] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
+[07May2025 15:22:17.369] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
+[07May2025 15:22:17.371] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[07May2025 15:22:17.387] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[07May2025 15:22:17.405] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 16.84 milliseconds
+[07May2025 15:22:17.405] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 18.04 ms
+[07May2025 15:22:17.407] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[07May2025 15:22:17.412] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 4.883 ms
+[07May2025 15:22:17.418] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[07May2025 15:22:17.554] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Blocos de operador
+[07May2025 15:22:17.633] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 215.1 milliseconds
+[07May2025 15:22:17.633] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 216.0 ms
+[07May2025 15:22:17.634] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[07May2025 15:22:17.636] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 689.4 μs
+[07May2025 15:22:17.637] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[07May2025 15:22:17.638] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.099 ms
+[07May2025 15:22:17.689] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[07May2025 15:22:17.690] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 744.6 μs
+[07May2025 15:22:17.736] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[07May2025 15:22:17.781] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 44.27 milliseconds
+[07May2025 15:22:17.797] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:internal took 14.76 milliseconds
+[07May2025 15:22:17.797] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 60.75 ms
+[07May2025 15:22:17.800] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[07May2025 15:22:17.811] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 9.916 ms
+[07May2025 15:22:17.814] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[07May2025 15:22:17.815] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.198 ms
+[07May2025 15:22:17.816] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[07May2025 15:22:17.844] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 28.41 ms
+[07May2025 15:22:17.849] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[07May2025 15:22:17.849] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 662.8 μs
+[07May2025 15:22:17.852] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[07May2025 15:22:18.076] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 224.0 milliseconds
+[07May2025 15:22:18.125] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 48.66 milliseconds
+[07May2025 15:22:18.126] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 273.6 ms
+[07May2025 15:22:18.145] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[07May2025 15:22:18.153] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 8.389 ms
+[07May2025 15:22:18.168] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[07May2025 15:22:18.179] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[07May2025 15:22:18.199] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering gui handlers: jei:gui took 11.69 milliseconds
+[07May2025 15:22:18.199] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 19.06 ms
+[07May2025 15:22:18.211] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[07May2025 15:22:18.213] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[07May2025 15:22:18.215] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[07May2025 15:22:18.249] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 33.38 ms
+[07May2025 15:22:18.249] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[07May2025 15:22:18.343] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 2973 ingredients
+[07May2025 15:22:18.666] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 2973 ingredients
+[07May2025 15:22:18.668] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 418.9 ms
+[07May2025 15:22:18.895] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 682.4 milliseconds
+[07May2025 15:22:18.896] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 683.9 ms
+[07May2025 15:22:18.898] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 729.4 ms
+[07May2025 15:22:18.898] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[07May2025 15:22:18.899] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 621.4 μs
+[07May2025 15:22:18.899] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.528 s
+[07May2025 15:22:18.926] [Render thread/INFO] [snownee.jade.Jade/]: Received config from the server: 
+[07May2025 15:22:18.932] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 375 advancements
+[07May2025 15:22:19.233] [Render thread/WARN] [Iris/]: Error while parsing the block ID map entry for "block.10104":
+[07May2025 15:22:19.233] [Render thread/WARN] [Iris/]: - The block minecraft:stone_slab has no property with the name variant, ignoring!
+[07May2025 15:22:19.251] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[07May2025 15:22:19.264] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
+[07May2025 15:22:19.587] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader clouds could not find uniform named ModelViewMat in the specified shader program.
+[07May2025 15:22:19.588] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader clouds could not find uniform named ProjMat in the specified shader program.
+[07May2025 15:22:19.588] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader clouds could not find uniform named ColorModulator in the specified shader program.
+[07May2025 15:22:19.588] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader clouds could not find uniform named FogStart in the specified shader program.
+[07May2025 15:22:19.588] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader clouds could not find uniform named FogEnd in the specified shader program.
+[07May2025 15:22:19.588] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader clouds could not find uniform named FogColor in the specified shader program.
+[07May2025 15:22:56.530] [Server thread/INFO] [net.minecraft.server.commands.LocateCommand/]: Locating element #minecraft:on_trial_chambers_maps (minecraft:trial_chambers) took 7 ms
+[07May2025 15:22:56.546] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] A estrutura do tipo #minecraft:on_trial_chambers_maps (minecraft:trial_chambers) mais próxima está em [-1632, ~, -1072] (a 444 blocos de distância)
+[07May2025 15:23:00.738] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Criativo]
+[07May2025 15:23:00.748] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Criativo
+[07May2025 15:23:03.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Dev teletransportou-se para -1631.500000, 96.993235, -1071.500000]
+[07May2025 15:23:03.750] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev teletransportou-se para -1631.500000, 96.993235, -1071.500000
+[07May2025 15:23:19.429] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Espectador]
+[07May2025 15:23:19.436] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Espectador
+[07May2025 15:23:26.579] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 375 advancements
+[07May2025 15:23:35.608] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 375 advancements
+[07May2025 15:23:36.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev alcançou o progresso [Minecraft: Jogos Vorazes]
+[07May2025 15:23:36.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev alcançou o progresso [Minecraft: Jogos Vorazes]
+[07May2025 15:23:36.588] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 376 advancements
+[07May2025 15:23:41.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Criativo]
+[07May2025 15:23:41.376] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Criativo
+[07May2025 15:24:20.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Sobrevivência]
+[07May2025 15:24:20.363] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Sobrevivência
+[07May2025 15:24:53.777] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Espectador]
+[07May2025 15:24:53.788] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Espectador
+[07May2025 15:25:19.364] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Criativo]
+[07May2025 15:25:19.378] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Criativo
+[07May2025 15:25:32.959] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: O modo de jogo foi definido para Espectador]
+[07May2025 15:25:32.971] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] O modo de jogo foi definido para Espectador
+[07May2025 15:26:24.023] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[07May2025 15:26:24.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Full Test]'/minecraft:overworld
+[07May2025 15:26:24.086] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Full Test]'/minecraft:the_end
+[07May2025 15:26:24.096] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Full Test]'/minecraft:the_nether
+[07May2025 15:26:24.395] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[07May2025 15:26:24.396] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to LISTENING
+[07May2025 15:26:24.396] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[07May2025 15:26:24.396] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[07May2025 15:26:24.396] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[07May2025 15:26:24.399] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 2.812 ms
+[07May2025 15:26:24.429] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Desconectado
+[07May2025 15:26:24.429] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev saiu do jogo
+[07May2025 15:26:24.444] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[07May2025 15:26:24.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[07May2025 15:26:24.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[07May2025 15:26:24.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[07May2025 15:26:24.722] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Full Test]'/minecraft:overworld
+[07May2025 15:26:24.805] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Full Test]'/minecraft:the_end
+[07May2025 15:26:24.810] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Full Test]'/minecraft:the_nether
+[07May2025 15:26:24.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Full Test): All chunks are saved
+[07May2025 15:26:24.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07May2025 15:26:24.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07May2025 15:26:24.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07May2025 15:26:24.926] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[07May2025 15:26:25.260] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

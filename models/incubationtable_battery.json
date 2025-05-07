@@ -1,0 +1,90 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [256, 256],
+	"textures": {
+		"particle": "incubation_table",
+		"theWholeTexture": "incubation_table"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 7, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5]},
+			"faces": {
+				"north": {"uv": [10.125, 0.375, 10.5, 0.8125], "texture": "#theWholeTexture"},
+				"east": {"uv": [9.75, 0.375, 10.125, 0.8125], "texture": "#theWholeTexture"},
+				"south": {"uv": [10.875, 0.375, 11.25, 0.8125], "texture": "#theWholeTexture"},
+				"west": {"uv": [10.5, 0.375, 10.875, 0.8125], "texture": "#theWholeTexture"},
+				"up": {"uv": [10.5, 0.375, 10.125, 0], "texture": "#theWholeTexture"},
+				"down": {"uv": [10.875, 0, 10.5, 0.375], "texture": "#theWholeTexture"}
+			}
+		},
+		{
+			"from": [6, 7, 6],
+			"to": [10, 8, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 7, 6]},
+			"faces": {
+				"north": {"uv": [11.125, 0.25, 11.375, 0.3125], "texture": "#theWholeTexture"},
+				"east": {"uv": [10.875, 0.25, 11.125, 0.3125], "texture": "#theWholeTexture"},
+				"south": {"uv": [11.625, 0.25, 11.875, 0.3125], "texture": "#theWholeTexture"},
+				"west": {"uv": [11.375, 0.25, 11.625, 0.3125], "texture": "#theWholeTexture"},
+				"up": {"uv": [11.375, 0.25, 11.125, 0], "texture": "#theWholeTexture"},
+				"down": {"uv": [11.625, 0, 11.375, 0.25], "texture": "#theWholeTexture"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [46.75, 0, 0],
+			"translation": [0, 2.5, 0.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [46.75, 0, 0],
+			"translation": [0, 2.5, 0.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"translation": [1, 3, 0.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"translation": [1, 3, 0.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 4.75, 0]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [0, 4.5, 0],
+			"scale": [1.3, 1.3, 1.3]
+		},
+		"fixed": {
+			"translation": [0, 6.25, 0],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "bottom",
+			"origin": [30, 0, 14],
+			"color": 0,
+			"children": [
+				{
+					"name": "chargingStation",
+					"origin": [30, 0, 14],
+					"color": 0,
+					"children": [
+						{
+							"name": "battery",
+							"origin": [8, 8, 8],
+							"color": 0,
+							"children": [0, 1]
+						}
+					]
+				}
+			]
+		}
+	]
+}

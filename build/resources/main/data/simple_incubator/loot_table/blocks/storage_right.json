@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "simple_incubator:blocks/storage_right",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "simple_incubator:storage_right"
+        }
+      ]
+    }
+  ]
+}

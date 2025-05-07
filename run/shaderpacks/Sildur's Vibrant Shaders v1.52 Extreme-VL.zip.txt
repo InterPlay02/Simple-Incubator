@@ -1,0 +1,8 @@
+#Fri Apr 04 10:01:31 BRT 2025
+ColoredShadows=false
+Contrast=2.5
+b_multiplier=0.5
+bloom_strength=0.5
+eyeLight=2.3
+light_brightness=0.8
+wFogDensity=50.0

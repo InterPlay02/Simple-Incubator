@@ -1,0 +1,20 @@
+{
+  "incubator_on": {
+    "subtitle": "subtitles.incubator_on",
+    "sounds": [
+      {
+        "name": "simple_incubator:incubator_on",
+        "stream": false
+      }
+    ]
+  },
+  "beep_sound": {
+    "subtitle": "subtitles.beep_sound",
+    "sounds": [
+      {
+        "name": "simple_incubator:beep_sound",
+        "stream": false
+      }
+    ]
+  }
+}

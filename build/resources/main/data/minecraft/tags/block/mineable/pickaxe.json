@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "simple_incubator:progress_monitor",
+    "simple_incubator:button_panel",
+    "simple_incubator:battery_monitor",
+    "simple_incubator:storage_right",
+    "simple_incubator:incubator",
+    "simple_incubator:storage_middle",
+    "simple_incubator:charging_station"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machinery",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "ccc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:black_dye"
+    },
+    "b": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "c": {
+      "item": "minecraft:polished_blackstone_button"
+    },
+    "d": {
+      "item": "minecraft:polished_blackstone_pressure_plate"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:battery_monitor",
+    "count": 1
+  }
+}

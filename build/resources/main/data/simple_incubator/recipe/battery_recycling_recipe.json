@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "recycling",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "simple_incubator:battery_empty"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    }
+  ],
+  "result": {
+    "id": "simple_incubator:battery",
+    "count": 1
+  }
+}
