@@ -32,7 +32,7 @@ After launching the game once with the mod installed, a config file will be gene
 [![Modrinth](https://img.shields.io/badge/Modrinth-Soon-brightgreen?logo=modrinth)](https://modrinth.com/)  
 [![License: All Rights Reserved](https://img.shields.io/badge/license-All--Rights--Reserved-red)](#license)
 
-- 💬 [Discord](https://discord.com/) *(placeholder link)*
+- 💬 [Discord](https://discord.com/)
 - 🧑‍💻 [GitHub Issues](https://github.com/InterPlay02/Simple-Incubator/issues)
 - 📃 [Changelog](CHANGELOG.md)
 
@@ -40,7 +40,7 @@ After launching the game once with the mod installed, a config file will be gene
 
 ## 📥 Installation
 
-1. Download the `.jar` file from [CurseForge](https://curseforge.com/).
+1. Download the `.jar` file from [CurseForge](https://discord.gg/dx5EHq2g).
 2. Place it into your `minecraft/mods` folder.
 3. Launch Minecraft with a compatible mod loader (e.g. NeoForge).
 
