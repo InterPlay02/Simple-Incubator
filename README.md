@@ -33,7 +33,7 @@ After launching the game once with the mod installed, a config file will be gene
 [![License: All Rights Reserved](https://img.shields.io/badge/license-All--Rights--Reserved-red)](#license)
 
 - 💬 [Discord](https://discord.com/) *(placeholder link)*
-- 🧑‍💻 [GitHub Issues](https://github.com/YourUsername/Simple-Incubator/issues)
+- 🧑‍💻 [GitHub Issues](https://github.com/InterPlay02/Simple-Incubator/issues)
 - 📃 [Changelog](CHANGELOG.md)
 
 ---
@@ -52,7 +52,7 @@ If you encounter a bug, crash, or would like to suggest a feature:
 
 1. Make sure you're using the latest version.
 2. Check if the issue has already been reported.
-3. Submit your issue [here](https://github.com/YourUsername/SimpleIncubator/issues), and include:
+3. Submit your issue [here](https://github.com/InterPlay02/Simple-Incubator/issues), and include:
    - Minecraft version
    - Mod loader and version
    - Steps to reproduce
