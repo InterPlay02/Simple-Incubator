@@ -28,19 +28,19 @@ After launching the game once with the mod installed, a config file will be gene
 
 ## 🔗 Links
 
-[![CurseForge](https://img.shields.io/badge/CurseForge-Soon-orange?logo=curseforge)](https://curseforge.com/)  
+[![CurseForge](https://img.shields.io/badge/CurseForge-Soon-orange?logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/simple-incubator)  
 [![Modrinth](https://img.shields.io/badge/Modrinth-Soon-brightgreen?logo=modrinth)](https://modrinth.com/)  
 [![License: All Rights Reserved](https://img.shields.io/badge/license-All--Rights--Reserved-red)](#license)
 
 - 💬 [Discord](https://discord.com/)
 - 🧑‍💻 [GitHub Issues](https://github.com/InterPlay02/Simple-Incubator/issues)
-- 📃 [Changelog](CHANGELOG.md)
+- 📃 [Changelog](https://github.com/InterPlay02/Simple-Incubator/blob/principal/Changelog.md)
 
 ---
 
 ## 📥 Installation
 
-1. Download the `.jar` file from [CurseForge](https://discord.gg/dx5EHq2g).
+1. Download the `.jar` file from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/simple-incubator).
 2. Place it into your `minecraft/mods` folder.
 3. Launch Minecraft with a compatible mod loader (e.g. NeoForge).
 
