@@ -1,50 +1,50 @@
-/time set night
+/tp @s 11392 ~ 18976
 /time set 0
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 10912 ~ 16752
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 16544 ~ 12416
+/loot replace block 16544 79 12416 container.0 loot simple_incubator:blocks/nest
+/loot replace block 16544 79 12416 contents loot simple_incubator:blocks/nest
+/loot replace block 16544 79 12416 hotbar.6 loot simple_incubator:blocks/nest
+/loot replace block 16544 79 12416 inventory.0 loot simple_incubator:blocks/nest
+/loot replace block 16544 79 12416 container.0 loot simple_incubator:blocks/nest
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 7648 ~ 15056
+/locate structure simple_incubator:nest_structure
+/tp @s 7648 ~ 15056
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 11808 ~ 672
+/time set 0
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 18960 ~ 13584
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 5616 ~ 17792
+/spreadplayers 10000 10000 10000 10000 false Dev
+/locate structure simple_incubator:nest_structure
+/tp @s 14336 ~ 10608
 /time set night
-/time set day
-/kill b04b85cd-e908-4d63-b205-19f29a7749e7
-/time set day
-/kill
-/kill 9b68c1fa-15c0-4447-98e4-5e2014441397
-/kill @e[name=dragon]
-/time set day
-/help
-/help 1
-/help
-/clear chat
-/msg clear
-/time set day
+/data get block 15 1 18
+/time set night
+/data get block 15 1 18
+/time set night
 /weather clear
+/data get block 15 1 18
 /time set day
-/give Dev yourmodid:induminus_rex_spawn_egg
+/give Dev minecraft:dragon_egg
+/summon minecraft:ender_dragon
+/kill @e[type=minecraft:ender_dragon]
+/summon minecraft:ender_dragon ~ 1 ~
+/kill @e[type=minecraft:ender_dragon]
+/summon minecraft:ender_dragon ~ 2 ~
+/kill @e[type=minecraft:ender_dragon]
 /time set day
-/time set night
-/time set day
-/data get block 3 0 12
-/time set day
-/time set night
-/time set day
-/data get block 16 0 17
-/data get block 17 1 17
-/data get block 25 0 2
-/data get block 25 1 1
-/time set day
-/data get block 16 0 17
-/time set day
-/data get block 16 0 17
-/data get block 25 0 2
-/time set 7500
-/time set night
-/data get block 25 0 2
-/data get entity 9e826875-87ee-4674-89d8-376187d87c84
-/time set night
-/time set day
-/data get block 16 0 17
-/time set night
-/xp add Dev 50 levels
-/time set day
-/locate structure #minecraft:mineshaft
-/time set day
-/weather clear
-/locate structure #minecraft:on_trial_chambers_maps
-/tp @s -1632 ~ -1072
+/kill @e[type=minecraft:slime]
+/kill @e[type=minecraft:ender_dragon]
+/kill @e[type=minecraft:slime]

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "simple_incubator:battery_mk_3",
+    "simple_incubator:battery_mk_2",
     "simple_incubator:battery_empty",
     "simple_incubator:battery"
   ]

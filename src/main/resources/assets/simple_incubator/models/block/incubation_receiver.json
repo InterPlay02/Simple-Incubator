@@ -1,0 +1,9 @@
+{
+  "parent": "simple_incubator:custom/incubationreceiver",
+  "textures": {
+    "all": "simple_incubator:block/incubationtransceiver",
+    "particle": "simple_incubator:block/incubationtransceiver",
+    "0": "simple_incubator:block/incubationtransceiver"
+  },
+  "render_type": "cutout_mipped"
+}

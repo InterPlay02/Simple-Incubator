@@ -39,7 +39,7 @@ import net.interplay.simple_incubator.procedures.CSEnergyUsageProcedure;
 import net.interplay.simple_incubator.block.entity.ChargingStationBlockEntity;
 
 public class ChargingStationBlock extends Block implements EntityBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public ChargingStationBlock() {
@@ -50,6 +50,18 @@ public class ChargingStationBlock extends Block implements EntityBlock {
 				if (s.getValue(BLOCKSTATE) == 2)
 					return 0;
 				if (s.getValue(BLOCKSTATE) == 3)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 4)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 5)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 6)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 7)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 8)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 9)
 					return 0;
 				return 0;
 			}
@@ -98,6 +110,54 @@ public class ChargingStationBlock extends Block implements EntityBlock {
 				case WEST -> box(0, 0, 0, 16, 16, 16);
 			};
 		}
+		if (state.getValue(BLOCKSTATE) == 4) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 5) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 6) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 7) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 8) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 9) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 16, 16);
 			case NORTH -> box(0, 0, 0, 16, 16, 16);
@@ -134,7 +194,7 @@ public class ChargingStationBlock extends Block implements EntityBlock {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		CSEnergyUsageProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		CSEnergyUsageProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		world.scheduleTick(pos, this, 1);
 	}
 

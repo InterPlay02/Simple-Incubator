@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -36,7 +37,7 @@ public class ButtonPanelRightClickedProcedure {
 				if (SimpleIncubatorModVariables.MapVariables.get(world).isButtonPanelPressed == false) {
 					if ((world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.CHARGING_STATION.get()
 							&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.STORAGE_MIDDLE.get()
-							&& (world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.INCUBATOR.get()
+							&& (world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("simple_incubator:incubators")))
 							&& (world.getBlockState(BlockPos.containing(x - 1, y - 1, z - 1))).getBlock() == SimpleIncubatorModBlocks.STORAGE_RIGHT.get()
 							&& (world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == SimpleIncubatorModBlocks.BATTERY_MONITOR.get()
 							&& (world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).getBlock() == SimpleIncubatorModBlocks.PROGRESS_MONITOR.get() && (new Object() {
@@ -107,7 +108,7 @@ public class ButtonPanelRightClickedProcedure {
 				if (SimpleIncubatorModVariables.MapVariables.get(world).isButtonPanelPressed == false) {
 					if ((world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.CHARGING_STATION.get()
 							&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.STORAGE_MIDDLE.get()
-							&& (world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.INCUBATOR.get()
+							&& (world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("simple_incubator:incubators")))
 							&& (world.getBlockState(BlockPos.containing(x + 1, y - 1, z + 1))).getBlock() == SimpleIncubatorModBlocks.STORAGE_RIGHT.get()
 							&& (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == SimpleIncubatorModBlocks.BATTERY_MONITOR.get()
 							&& (world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getBlock() == SimpleIncubatorModBlocks.PROGRESS_MONITOR.get() && (new Object() {
@@ -178,7 +179,7 @@ public class ButtonPanelRightClickedProcedure {
 				if (SimpleIncubatorModVariables.MapVariables.get(world).isButtonPanelPressed == false) {
 					if ((world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).getBlock() == SimpleIncubatorModBlocks.CHARGING_STATION.get()
 							&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.STORAGE_MIDDLE.get()
-							&& (world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).getBlock() == SimpleIncubatorModBlocks.INCUBATOR.get()
+							&& (world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).is(BlockTags.create(ResourceLocation.parse("simple_incubator:incubators")))
 							&& (world.getBlockState(BlockPos.containing(x + 1, y - 1, z - 1))).getBlock() == SimpleIncubatorModBlocks.STORAGE_RIGHT.get()
 							&& (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == SimpleIncubatorModBlocks.BATTERY_MONITOR.get()
 							&& (world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).getBlock() == SimpleIncubatorModBlocks.PROGRESS_MONITOR.get() && (new Object() {
@@ -241,7 +242,7 @@ public class ButtonPanelRightClickedProcedure {
 				if (SimpleIncubatorModVariables.MapVariables.get(world).isButtonPanelPressed == false) {
 					if ((world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).getBlock() == SimpleIncubatorModBlocks.CHARGING_STATION.get()
 							&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == SimpleIncubatorModBlocks.STORAGE_MIDDLE.get()
-							&& (world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).getBlock() == SimpleIncubatorModBlocks.INCUBATOR.get()
+							&& (world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).is(BlockTags.create(ResourceLocation.parse("simple_incubator:incubators")))
 							&& (world.getBlockState(BlockPos.containing(x - 1, y - 1, z + 1))).getBlock() == SimpleIncubatorModBlocks.STORAGE_RIGHT.get()
 							&& (world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == SimpleIncubatorModBlocks.BATTERY_MONITOR.get()
 							&& (world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).getBlock() == SimpleIncubatorModBlocks.PROGRESS_MONITOR.get() && (new Object() {

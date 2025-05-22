@@ -15,6 +15,9 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.chunk.LevelChunk;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.RenderShape;
@@ -25,7 +28,10 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.SectionPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.renderer.texture.OverlayTexture;
@@ -268,7 +274,7 @@ public class RenderEggOverIncubatorProcedure {
 							positionx = _blockEntityEntry.getKey().getX();
 							positiony = _blockEntityEntry.getKey().getY();
 							positionz = _blockEntityEntry.getKey().getZ();
-							if (blockstateiterator.getBlock() == SimpleIncubatorModBlocks.INCUBATOR.get()) {
+							if (blockstateiterator.is(BlockTags.create(ResourceLocation.parse("simple_incubator:incubators")))) {
 								renderItem((new Object() {
 									public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 										if (world instanceof ILevelExtension _ext) {
@@ -286,6 +292,110 @@ public class RenderEggOverIncubatorProcedure {
 										return -1;
 									}
 								}.getValue(world, new BlockPos(positionx, positiony, positionz), "blockRotationTimer")), 0, 0, (float) 0.7, false, false);
+							} else if (blockstateiterator.getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+								if ((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(new BlockPos(positionx, positiony, positionz))))) == Direction.NORTH) {
+									renderItem((new Object() {
+										public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).copy();
+											}
+											return ItemStack.EMPTY;
+										}
+									}.getItemStack(world, new BlockPos(positionx, positiony, positionz), 0)), (positionx + 0.5), (positiony + 0.5), (positionz + 0.4), (float) (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "blockRotationTimer")), 0, 0, (float) 0.6, false, false);
+								} else if ((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(new BlockPos(positionx, positiony, positionz))))) == Direction.SOUTH) {
+									renderItem((new Object() {
+										public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).copy();
+											}
+											return ItemStack.EMPTY;
+										}
+									}.getItemStack(world, new BlockPos(positionx, positiony, positionz), 0)), (positionx + 0.5), (positiony + 0.5), (positionz + 0.6), (float) (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "blockRotationTimer")), 0, 0, (float) 0.6, false, false);
+								} else if ((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(new BlockPos(positionx, positiony, positionz))))) == Direction.EAST) {
+									renderItem((new Object() {
+										public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).copy();
+											}
+											return ItemStack.EMPTY;
+										}
+									}.getItemStack(world, new BlockPos(positionx, positiony, positionz), 0)), (positionx + 0.6), (positiony + 0.5), (positionz + 0.5), (float) (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "blockRotationTimer")), 0, 0, (float) 0.6, false, false);
+								} else {
+									renderItem((new Object() {
+										public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).copy();
+											}
+											return ItemStack.EMPTY;
+										}
+									}.getItemStack(world, new BlockPos(positionx, positiony, positionz), 0)), (positionx + 0.4), (positiony + 0.5), (positionz + 0.5), (float) (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "blockRotationTimer")), 0, 0, (float) 0.6, false, false);
+								}
 							}
 						}
 					}

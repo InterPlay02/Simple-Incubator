@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "incubation_table",
-    "customModelName": "incubationtable_battery:default",
+    "customModelName": "incubationtable_batteryempty:default",
     "customProperties": {},
     "states": [],
     "name": "Battery (Empty)",

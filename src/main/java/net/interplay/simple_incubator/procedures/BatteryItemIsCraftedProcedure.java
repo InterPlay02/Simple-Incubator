@@ -8,7 +8,7 @@ public class BatteryItemIsCraftedProcedure {
 	public static void execute(ItemStack itemstack) {
 		{
 			final String _tagName = "batteryEnergyLevel";
-			final double _tagValue = 10000;
+			final double _tagValue = 50000;
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 		}
 	}

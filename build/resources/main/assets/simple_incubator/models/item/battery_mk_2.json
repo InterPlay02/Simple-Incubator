@@ -1,0 +1,7 @@
+{
+  "parent": "simple_incubator:custom/incubationtable_batterymk2",
+  "textures": {
+    "theWholeTexture": "simple_incubator:block/incubation_table",
+    "particle": "simple_incubator:item/incubation_table"
+  }
+}

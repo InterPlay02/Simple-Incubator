@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "simple_incubator:incubator",
+    "simple_incubator:incubator_mk_2",
+    "simple_incubator:incubator_mk_3",
+    "simple_incubator:incubator_mk_4"
+  ]
+}

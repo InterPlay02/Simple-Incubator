@@ -11,6 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.interplay.simple_incubator.client.gui.StorageRightGUIScreen;
 import net.interplay.simple_incubator.client.gui.StorageMiddleGUIScreen;
+import net.interplay.simple_incubator.client.gui.IncubationTransmitterGUIScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SimpleIncubatorModScreens {
@@ -18,5 +19,6 @@ public class SimpleIncubatorModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(SimpleIncubatorModMenus.STORAGE_MIDDLE_GUI.get(), StorageMiddleGUIScreen::new);
 		event.register(SimpleIncubatorModMenus.STORAGE_RIGHT_GUI.get(), StorageRightGUIScreen::new);
+		event.register(SimpleIncubatorModMenus.INCUBATION_TRANSMITTER_GUI.get(), IncubationTransmitterGUIScreen::new);
 	}
 }

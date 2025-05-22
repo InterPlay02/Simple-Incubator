@@ -1,0 +1,236 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2025-05-16 22:16:51
+Description: Unexpected error
+
+java.lang.StringIndexOutOfBoundsException: Range [10, 11) out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349) ~[?:?] {}
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4865) ~[?:?] {re:mixin}
+	at java.base/java.lang.String.substring(String.java:2834) ~[?:?] {re:mixin}
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.RenderTextOnReceiverProcedure.execute(RenderTextOnReceiverProcedure.java:347) ~[%23217!/:?] {re:classloading}
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.RenderTextOnReceiverProcedure.renderModels(RenderTextOnReceiverProcedure.java:248) ~[%23217!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23141!/:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.client.ClientHooks.dispatchRenderStage(ClientHooks.java:291) ~[neoforge-21.1.65-minecraft.jar%23200!/:?] {re:mixin,re:classloading,pl:mixin:APP:sodium-neoforge.mixins.json:platform.neoforge.ClientHooksMixin from mod sodium,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:1045) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.renderLevel(GameRenderer.java:1271) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1024) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1195) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349) ~[?:?] {}
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4865) ~[?:?] {re:mixin}
+	at java.base/java.lang.String.substring(String.java:2834) ~[?:?] {re:mixin}
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.RenderTextOnReceiverProcedure.execute(RenderTextOnReceiverProcedure.java:347) ~[%23217!/:?] {re:classloading}
+	at TRANSFORMER/simple_incubator@1.0/net.interplay.simple_incubator.procedures.RenderTextOnReceiverProcedure.renderModels(RenderTextOnReceiverProcedure.java:248) ~[%23217!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23141!/:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.client.ClientHooks.dispatchRenderStage(ClientHooks.java:291) ~[neoforge-21.1.65-minecraft.jar%23200!/:?] {re:mixin,re:classloading,pl:mixin:APP:sodium-neoforge.mixins.json:platform.neoforge.ClientHooksMixin from mod sodium,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:1045) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.renderLevel(GameRenderer.java:1271) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+-- Uptime --
+Details:
+	JVM uptime: 59.158s
+	Wall uptime: 46.352s
+	High-res time: 56.722s
+	Client ticks: 645 ticks / 32.250s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2392) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:868) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:828) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.65-minecraft.jar%23199!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/8, l='ClientLevel', x=15.62, y=0.00, z=23.78]]
+	Chunk stats: 1225, 809
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,0,0), Section: (at 0,0,0 in 0,0,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 1724624 game time, 14277 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 19
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/sodium, mod/industrialforegoing, mod/fabric_api_base, mod/fabric_renderer_api_v1, mod/enderio_conduits, mod/titanium, mod/sodium_extra, mod/jade, mod/geckolib, mod/playeranimator, mod/jei, mod/enderio_armory, mod/pehkui, mod/enderio_base, mod/mekanism, mod/enderio, mod/endercore, mod/neoforge, mod/kleiders_custom_renderer, mod/fabric_block_view_api_v2, mod/iris, mod/enderio_conduits_modded, mod/mekanismgenerators, mod/fabric_rendering_data_attachment_v1, mod/justdirethings, mod/enderio_machines, mod/simple_incubator, mod/betteradvancements, file/Leon's Spawneggs Backport.zip
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 251288104 bytes (239 MiB) / 1287651328 bytes (1228 MiB) up to 8577351680 bytes (8180 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 0
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.79
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon RX 6600 XT
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 8176.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.21001.9024
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MiB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.67
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MiB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.67
+	Memory slot #3 type: DDR4
+	Virtual memory max (MiB): 36430.65
+	Virtual memory used (MiB): 26320.29
+	Swap memory total (MiB): 3712.00
+	Swap memory used (MiB): 82.64
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 20615.32, total: 228102.00
+	Space in storage for workdir (MiB): available: 157446.02, total: 915698.00
+	JVM Flags: 0 total; 
+	Loaded Shaderpack: ComplementaryReimagined_r5.4.zip
+		Profile: Custom (+32 options changed by user)
+	Launched Version: 21.1.65
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: AMD Radeon RX 6600 XT GL version 4.6.0 Core Profile Context 25.5.1.250417, ATI Technologies Inc.
+	Window size: 1920x1009
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 14/14 chunks
+	Resource Packs: vanilla, mod_resources, mod/sodium, mod/industrialforegoing (incompatible), mod/fabric_api_base, mod/fabric_renderer_api_v1, mod/enderio_conduits, mod/titanium, mod/sodium_extra, mod/jade (incompatible), mod/geckolib, mod/playeranimator, mod/jei (incompatible), mod/enderio_armory, mod/pehkui, mod/enderio_base, mod/mekanism, mod/enderio, mod/endercore, mod/neoforge, mod/kleiders_custom_renderer (incompatible), mod/fabric_block_view_api_v2, mod/iris, mod/enderio_conduits_modded, mod/mekanismgenerators, mod/fabric_rendering_data_attachment_v1, mod/justdirethings, mod/enderio_machines, mod/simple_incubator (incompatible), mod/betteradvancements (incompatible), file/Leon's Spawneggs Backport.zip
+	Current Language: pt_br
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 16x AMD Ryzen 7 5800X 8-Core Processor 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/8, l='ServerLevel[Super Plano]', x=15.62, y=0.00, z=23.78]]
+	Active Data Packs: vanilla, mod_data, mod/sodium, mod/industrialforegoing (incompatible), mod/fabric_api_base, mod/fabric_renderer_api_v1, mod/enderio_conduits, mod/titanium, mod/sodium_extra, mod/jade (incompatible), mod/geckolib, mod/playeranimator, mod/jei (incompatible), mod/enderio_armory, mod/pehkui, mod/enderio_base, mod/mekanism, mod/enderio, mod/endercore, mod/neoforge, mod/kleiders_custom_renderer, mod/fabric_block_view_api_v2, mod/iris, mod/enderio_conduits_modded, mod/mekanismgenerators, mod/fabric_rendering_data_attachment_v1, mod/justdirethings, mod/enderio_machines, mod/simple_incubator, mod/betteradvancements (incompatible)
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/betteradvancements (incompatible), mod/endercore, mod/enderio, mod/enderio_armory, mod/enderio_base, mod/enderio_conduits, mod/enderio_conduits_modded, mod/enderio_machines, mod/fabric_api_base, mod/fabric_block_view_api_v2, mod/fabric_renderer_api_v1, mod/fabric_rendering_data_attachment_v1, mod/geckolib, mod/industrialforegoing (incompatible), mod/iris, mod/jade (incompatible), mod/jei (incompatible), mod/justdirethings, mod/kleiders_custom_renderer, mod/mekanism, mod/mekanismgenerators, mod/neoforge, mod/pehkui, mod/playeranimator, mod/simple_incubator, mod/sodium, mod/sodium_extra, mod/titanium, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 1774606086919279985
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		industrialforegoing-1.21-3.6.29.jar               |Industrial Foregoing          |industrialforegoing           |1.21-3.6.29         |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+acb05a3919.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+acb05a3919    |Manifest: NOSIGNATURE
+		com.enderio.enderio-conduits-7.1.8-alpha.jar      |Ender IO Conduits             |enderio_conduits              |7.1.8-alpha         |Manifest: NOSIGNATURE
+		titanium-1.21-4.0.37.jar                          |Titanium                      |titanium                      |4.0.37              |Manifest: NOSIGNATURE
+		sodium-extra-neoforge-0.6.0+mc1.21.1.jar          |Sodium Extra                  |sodium_extra                  |0.6.0+mc1.21.1      |Manifest: NOSIGNATURE
+		Jade-1.21.1-NeoForge-15.9.2.jar                   |Jade                          |jade                          |15.9.2+neoforge     |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.7.3.jar                |GeckoLib 4                    |geckolib                      |4.7.3               |Manifest: NOSIGNATURE
+		player-animation-lib-forge-2.0.1+1.21.1.jar       |Player Animator               |playeranimator                |2.0.1+1.21.1        |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.21.0.247.jar               |Just Enough Items             |jei                           |19.21.0.247         |Manifest: NOSIGNATURE
+		com.enderio.enderio-armory-7.1.8-alpha.jar        |Ender IO Armory               |enderio_armory                |7.1.8-alpha         |Manifest: NOSIGNATURE
+		Pehkui-3.8.3+1.21-neoforge.jar                    |Pehkui                        |pehkui                        |3.8.3+1.21-neoforge |Manifest: NOSIGNATURE
+		com.enderio.enderio-base-7.1.8-alpha.jar          |Ender IO Base                 |enderio_base                  |7.1.8-alpha         |Manifest: NOSIGNATURE
+		Mekanism-1.21.1-10.7.7.64.jar                     |Mekanism                      |mekanism                      |10.7.7              |Manifest: NOSIGNATURE
+		enderio-7.1.8-alpha.jar                           |Ender IO                      |enderio                       |7.1.8-alpha         |Manifest: NOSIGNATURE
+		com.enderio.endercore-7.1.8-alpha.jar             |Ender Core                    |endercore                     |7.1.8-alpha         |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |NeoForge                      |neoforge                      |21.1.65             |Manifest: NOSIGNATURE
+		Kleiders Custom Renderer API 7.2.0 1.21.1.jar     |Kleiders Custom Renderer      |kleiders_custom_renderer      |7.2.0               |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+		iris-neoforge-1.8.6+mc1.21.1.jar                  |Iris                          |iris                          |1.8.6+mc1.21.1      |Manifest: NOSIGNATURE
+		com.enderio.enderio-conduits-modded-7.1.8-alpha.ja|Ender IO Modded Conduits      |enderio_conduits_modded       |7.1.8-alpha         |Manifest: NOSIGNATURE
+		MekanismGenerators-1.21.1-10.7.7.64.jar           |Mekanism: Generators          |mekanismgenerators            |10.7.7              |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		sodium-neoforge-0.6.1+mc1.21.1.jar                |Sodium                        |sodium                        |0.6.1+mc1.21.1      |Manifest: NOSIGNATURE
+		justdirethings-1.5.5.jar                          |Just Dire Things              |justdirethings                |1.5.5               |Manifest: NOSIGNATURE
+		com.enderio.enderio-machines-7.1.8-alpha.jar      |Ender IO Machines             |enderio_machines              |7.1.8-alpha         |Manifest: NOSIGNATURE
+		main                                              |Simple Incubator              |simple_incubator              |1.0                 |Manifest: NOSIGNATURE
+		BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar   |Better Advancements           |betteradvancements            |0.4.3.21            |Manifest: NOSIGNATURE
+	Crash Report UUID: 9c402150-b2ef-4134-a60e-97a4196e274a
+	FML: 4.0.24
+	NeoForge: 21.1.65

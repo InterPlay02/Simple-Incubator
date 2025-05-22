@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "technology",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:lime_dye"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    },
+    "d": {
+      "item": "simple_incubator:energy_update_module_mk_1"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:energy_update_module_mk_2",
+    "count": 1
+  }
+}

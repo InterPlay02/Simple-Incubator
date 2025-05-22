@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "simple_incubator:incubator_mk_4",
+    "simple_incubator:incubator_mk_3",
+    "simple_incubator:incubator_mk_2",
+    "simple_incubator:incubation_receiver",
+    "simple_incubator:incubation_transmitter",
     "simple_incubator:progress_monitor",
     "simple_incubator:button_panel",
     "simple_incubator:battery_monitor",

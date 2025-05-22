@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "recycling",
+  "category": "redstone",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "simple_incubator:battery_empty"
+    },
+    "c": {
+      "item": "minecraft:ancient_debris"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:battery_mk_3",
+    "count": 1
+  }
+}

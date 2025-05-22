@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "incubation_table"
+        "theWholeTexture": "incubation_table"
       },
       "name": "default"
     }

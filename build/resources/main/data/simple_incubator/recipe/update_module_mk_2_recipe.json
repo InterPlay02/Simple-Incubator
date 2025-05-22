@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "thecnology",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "simple_incubator:range_update_module_mk_1"
+    },
+    "c": {
+      "item": "minecraft:green_dye"
+    },
+    "d": {
+      "item": "minecraft:calibrated_sculk_sensor"
+    },
+    "e": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "f": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:range_update_module_mk_2",
+    "count": 1
+  }
+}

@@ -61,6 +61,9 @@ public class InsertEggIncubatorProcedure {
 					e.printStackTrace();
 				}
 			}
+		} else {
+			hatchTimerMin = 500;
+			hatchTimerMax = 6000;
 		}
 		if (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -92,7 +95,7 @@ public class InsertEggIncubatorProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (theEgg.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("timeToHatch") == 0) {
+				} else if (theEgg.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("timeToHatch") <= 0) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);

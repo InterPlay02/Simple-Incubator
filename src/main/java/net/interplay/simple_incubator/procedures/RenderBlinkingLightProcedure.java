@@ -266,7 +266,10 @@ public class RenderBlinkingLightProcedure {
 											}
 										}.getDirection(blockstateiterator)) == Direction.NORTH) {
 											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip19 ? blockstateiterator.getValue(_getip19) : -1) == 0
-													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip21 ? blockstateiterator.getValue(_getip21) : -1) == 2) {
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip21 ? blockstateiterator.getValue(_getip21) : -1) == 2
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip23 ? blockstateiterator.getValue(_getip23) : -1) == 5
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip25 ? blockstateiterator.getValue(_getip25) : -1) == 7
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip27 ? blockstateiterator.getValue(_getip27) : -1) == 9) {
 												renderShape(shape(), (positionx + 0.19), (positiony + 0.79), (positionz - 0.005), -90, 0, 0, (float) 0.025, (float) 0.025, (float) 0.025, (int) (new Object() {
 													public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 														BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -296,8 +299,11 @@ public class RenderBlinkingLightProcedure {
 														: Direction.NORTH;
 											}
 										}.getDirection(blockstateiterator)) == Direction.SOUTH) {
-											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip46 ? blockstateiterator.getValue(_getip46) : -1) == 0
-													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip48 ? blockstateiterator.getValue(_getip48) : -1) == 2) {
+											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip52 ? blockstateiterator.getValue(_getip52) : -1) == 0
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip54 ? blockstateiterator.getValue(_getip54) : -1) == 2
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip56 ? blockstateiterator.getValue(_getip56) : -1) == 5
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip58 ? blockstateiterator.getValue(_getip58) : -1) == 7
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip60 ? blockstateiterator.getValue(_getip60) : -1) == 9) {
 												renderShape(shape(), (positionx + 0.81), (positiony + 0.79), (positionz + 1.005), 90, 0, 0, (float) 0.025, (float) 0.025, (float) 0.025, (int) (new Object() {
 													public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 														BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -327,8 +333,11 @@ public class RenderBlinkingLightProcedure {
 														: Direction.NORTH;
 											}
 										}.getDirection(blockstateiterator)) == Direction.EAST) {
-											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip73 ? blockstateiterator.getValue(_getip73) : -1) == 0
-													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip75 ? blockstateiterator.getValue(_getip75) : -1) == 2) {
+											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip85 ? blockstateiterator.getValue(_getip85) : -1) == 0
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip87 ? blockstateiterator.getValue(_getip87) : -1) == 2
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip89 ? blockstateiterator.getValue(_getip89) : -1) == 5
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip91 ? blockstateiterator.getValue(_getip91) : -1) == 7
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip93 ? blockstateiterator.getValue(_getip93) : -1) == 9) {
 												renderShape(shape(), (positionx + 1.005), (positiony + 0.79), (positionz + 0.19), 0, 0, 0, (float) 0.025, (float) 0.025, (float) 0.025, (int) (new Object() {
 													public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 														BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -348,8 +357,11 @@ public class RenderBlinkingLightProcedure {
 												}.getValue(world, new BlockPos(positionx, positiony, positionz), "opacity")) << 24 | 0 << 16 | 255 << 8 | 0);
 											}
 										} else {
-											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip97 ? blockstateiterator.getValue(_getip97) : -1) == 0
-													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip99 ? blockstateiterator.getValue(_getip99) : -1) == 2) {
+											if ((blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip115 ? blockstateiterator.getValue(_getip115) : -1) == 0
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip117 ? blockstateiterator.getValue(_getip117) : -1) == 2
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip119 ? blockstateiterator.getValue(_getip119) : -1) == 5
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip121 ? blockstateiterator.getValue(_getip121) : -1) == 7
+													|| (blockstateiterator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip123 ? blockstateiterator.getValue(_getip123) : -1) == 9) {
 												renderShape(shape(), (positionx - 0.005), (positiony + 0.79), (positionz + 0.81), 180, 0, 0, (float) 0.025, (float) 0.025, (float) 0.025, (int) (new Object() {
 													public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 														BlockEntity blockEntity = world.getBlockEntity(pos);

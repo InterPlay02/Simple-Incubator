@@ -2,7 +2,10 @@ package net.interplay.simple_incubator.procedures;
 
 import org.joml.Matrix4f;
 
+import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -217,6 +220,7 @@ public class RenderEnergyBarEmptyProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
 		double imageWidth = 0;
+		double batteryEnergy = 0;
 		if (world instanceof ClientLevel _blockEntityContext) {
 			int _scanRange = Minecraft.getInstance().options.getEffectiveRenderDistance();
 			BlockPos _scanCenter = Minecraft.getInstance().player.blockPosition();
@@ -242,10 +246,28 @@ public class RenderEnergyBarEmptyProcedure {
 									}
 								}.getValue(world, BlockPos.containing(positionx, positiony - 1, positionz), "machineEnergyLevel");
 								if (begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR, true)) {
-									add((float) ((imageWidth / 10000) * 60 - 30), 0, 0, 200 << 24 | 255 << 16 | 220 << 8 | 190);
+									add((float) ((imageWidth / new Object() {
+										public int getMaxEnergyStored(LevelAccessor level, BlockPos pos) {
+											if (level instanceof ILevelExtension _ext) {
+												IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+												if (_entityStorage != null)
+													return _entityStorage.getMaxEnergyStored();
+											}
+											return 0;
+										}
+									}.getMaxEnergyStored(world, BlockPos.containing(positionx, positiony - 1, positionz))) * 60 - 30), 0, 0, 200 << 24 | 255 << 16 | 220 << 8 | 190);
 									add(30, 0, 0, 200 << 24 | 255 << 16 | 220 << 8 | 190);
 									add(30, 5, 0, 200 << 24 | 255 << 16 | 220 << 8 | 190);
-									add((float) ((imageWidth / 10000) * 60 - 30), 5, 0, 200 << 24 | 255 << 16 | 220 << 8 | 190);
+									add((float) ((imageWidth / new Object() {
+										public int getMaxEnergyStored(LevelAccessor level, BlockPos pos) {
+											if (level instanceof ILevelExtension _ext) {
+												IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+												if (_entityStorage != null)
+													return _entityStorage.getMaxEnergyStored();
+											}
+											return 0;
+										}
+									}.getMaxEnergyStored(world, BlockPos.containing(positionx, positiony - 1, positionz))) * 60 - 30), 5, 0, 200 << 24 | 255 << 16 | 220 << 8 | 190);
 									end();
 								}
 								if (target(2)) {

@@ -41,6 +41,7 @@ public class DropSpawnEggProcedure {
 		double chanceToDropEgg = 0;
 		com.google.gson.JsonObject mainConfig = new com.google.gson.JsonObject();
 		com.google.gson.JsonObject configs = new com.google.gson.JsonObject();
+		boolean spawnEggDrop = false;
 		configFile = new File((FMLPaths.GAMEDIR.get().toString() + "/config/"), File.separator + "SimpleIncubator.json");
 		if (configFile.exists()) {
 			{
@@ -55,12 +56,16 @@ public class DropSpawnEggProcedure {
 					mainConfig = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
 					configs = mainConfig.get("modConfigs").getAsJsonObject();
 					chanceToDropEgg = configs.get("chanceToDropEgg").getAsDouble();
+					spawnEggDrop = configs.get("enableSpawnEggDrop").getAsBoolean();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
 			}
+		} else {
+			spawnEggDrop = true;
+			chanceToDropEgg = 0.005;
 		}
-		if (Math.random() < chanceToDropEgg) {
+		if (spawnEggDrop == true && Math.random() < chanceToDropEgg) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
 						new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString() + "_spawn_egg")).toLowerCase(java.util.Locale.ENGLISH)))));

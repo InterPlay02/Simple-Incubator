@@ -11,7 +11,7 @@ import net.interplay.simple_incubator.procedures.BatteryItemIsCraftedProcedure;
 
 public class BatteryItem extends Item {
 	public BatteryItem() {
-		super(new Item.Properties().durability(10002).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(50002).rarity(Rarity.COMMON));
 	}
 
 	@Override

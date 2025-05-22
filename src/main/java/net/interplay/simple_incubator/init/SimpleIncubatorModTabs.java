@@ -21,7 +21,9 @@ public class SimpleIncubatorModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(SimpleIncubatorModBlocks.NEST.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(SimpleIncubatorModItems.INCUBATION_TABLE_ITEM.get());
 			tabData.accept(SimpleIncubatorModBlocks.CHARGING_STATION.get().asItem());
 			tabData.accept(SimpleIncubatorModBlocks.STORAGE_MIDDLE.get().asItem());
@@ -32,6 +34,18 @@ public class SimpleIncubatorModTabs {
 			tabData.accept(SimpleIncubatorModBlocks.PROGRESS_MONITOR.get().asItem());
 			tabData.accept(SimpleIncubatorModItems.BATTERY_EMPTY.get());
 			tabData.accept(SimpleIncubatorModItems.BATTERY.get());
+			tabData.accept(SimpleIncubatorModItems.BATTERY_MK_2.get());
+			tabData.accept(SimpleIncubatorModItems.BATTERY_MK_3.get());
+			tabData.accept(SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get().asItem());
+			tabData.accept(SimpleIncubatorModBlocks.INCUBATION_RECEIVER.get().asItem());
+			tabData.accept(SimpleIncubatorModItems.RANGE_UPDATE_MODULE_MK_1.get());
+			tabData.accept(SimpleIncubatorModItems.RANGE_UPDATE_MODULE_MK_2.get());
+			tabData.accept(SimpleIncubatorModItems.RANGE_UPDATE_MODULE_MK_3.get());
+			tabData.accept(SimpleIncubatorModItems.RANGE_UPDATE_MODULE_MK_4.get());
+			tabData.accept(SimpleIncubatorModItems.ENERGY_UPDATE_MODULE_MK_1.get());
+			tabData.accept(SimpleIncubatorModItems.ENERGY_UPDATE_MODULE_MK_2.get());
+			tabData.accept(SimpleIncubatorModItems.ENERGY_UPDATE_MODULE_MK_3.get());
+			tabData.accept(SimpleIncubatorModItems.ENERGY_UPDATE_MODULE_MK_4.get());
 		}
 	}
 }

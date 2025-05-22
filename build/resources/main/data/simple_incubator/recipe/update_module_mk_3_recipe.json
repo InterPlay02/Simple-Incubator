@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "thecnology",
+  "category": "redstone",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:red_dye"
+    },
+    "c": {
+      "item": "minecraft:calibrated_sculk_sensor"
+    },
+    "d": {
+      "item": "simple_incubator:range_update_module_mk_2"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:range_update_module_mk_3",
+    "count": 1
+  }
+}

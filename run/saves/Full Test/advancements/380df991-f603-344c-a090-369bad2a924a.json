@@ -1,28 +1,7 @@
 {
-  "biomeswevegone:biomeswevegone/root": {
-    "criteria": {
-      "tick": "2025-05-07 09:31:06 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
       "unlock_right_away": "2025-05-07 09:31:06 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:biomeswevegone/adventure/oh_the_biomes_weve_gone": {
-    "criteria": {
-      "biomeswevegone:pumpkin_valley": "2025-05-07 10:05:23 -0300",
-      "biomeswevegone:temperate_grove": "2025-05-07 09:38:30 -0300",
-      "biomeswevegone:allium_shrubland": "2025-05-07 10:03:26 -0300",
-      "biomeswevegone:aspen_boreal": "2025-05-07 09:31:07 -0300"
-    },
-    "done": false
-  },
-  "biomeswevegone:biomeswevegone/adventure/root": {
-    "criteria": {
-      "biomeswevegone:aspen_boreal": "2025-05-07 09:31:07 -0300"
     },
     "done": true
   },
@@ -145,13 +124,6 @@
       "stone_pickaxe": "2025-05-07 09:38:21 -0300"
     },
     "done": true
-  },
-  "biomeswevegone:biomeswevegone/husbandry/johnny_appleseed": {
-    "criteria": {
-      "apple": "2025-05-07 09:38:22 -0300",
-      "golden_apple": "2025-05-07 10:18:09 -0300"
-    },
-    "done": false
   },
   "minecraft:adventure/root": {
     "criteria": {
@@ -352,28 +324,6 @@
     },
     "done": false
   },
-  "biomesoplenty:biomesoplenty/all_biomes": {
-    "criteria": {
-      "spider_nest": "2025-05-07 10:11:48 -0300",
-      "erupting_inferno": "2025-05-07 09:48:49 -0300",
-      "glowing_grotto": "2025-05-07 10:11:52 -0300",
-      "orchard": "2025-05-07 10:33:26 -0300",
-      "mystic_grove": "2025-05-07 09:55:59 -0300",
-      "moor": "2025-05-07 09:57:14 -0300",
-      "overgrown_greens": "2025-05-07 09:55:51 -0300",
-      "shrubland": "2025-05-07 10:33:20 -0300",
-      "rocky_shrubland": "2025-05-07 10:33:18 -0300",
-      "crystalline_chasm": "2025-05-07 09:48:37 -0300",
-      "grassland": "2025-05-07 09:57:06 -0300"
-    },
-    "done": false
-  },
-  "biomesoplenty:biomesoplenty/root": {
-    "criteria": {
-      "crystalline_chasm": "2025-05-07 09:48:37 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/smooth_basalt": {
     "criteria": {
       "has_basalt": "2025-05-07 09:50:06 -0300"
@@ -440,12 +390,6 @@
     },
     "done": true
   },
-  "biomesoplenty:recipes/decorations/blackstone_bulb": {
-    "criteria": {
-      "has_blackstone": "2025-05-07 09:50:29 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/polished_blackstone_stairs_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2025-05-07 09:50:29 -0300"
@@ -459,12 +403,6 @@
     "done": true
   },
   "minecraft:recipes/building_blocks/chiseled_polished_blackstone_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2025-05-07 09:50:29 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/decorations/blackstone_spines": {
     "criteria": {
       "has_blackstone": "2025-05-07 09:50:29 -0300"
     },
@@ -542,19 +480,7 @@
     },
     "done": true
   },
-  "biomesoplenty:recipes/decorations/blackstone_spines_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2025-05-07 09:50:29 -0300"
-    },
-    "done": true
-  },
   "minecraft:husbandry/root": {
-    "criteria": {
-      "consumed_item": "2025-05-07 09:50:53 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:biomeswevegone/husbandry/root": {
     "criteria": {
       "consumed_item": "2025-05-07 09:50:53 -0300"
     },
@@ -572,87 +498,17 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2025-05-07 10:03:40 -0300",
+      "minecraft:old_growth_birch_forest": "2025-05-21 10:21:37 -0300",
       "minecraft:beach": "2025-05-07 10:05:20 -0300",
       "minecraft:taiga": "2025-05-07 10:04:48 -0300",
       "minecraft:ocean": "2025-05-07 10:04:04 -0300",
       "minecraft:river": "2025-05-07 09:56:48 -0300",
       "minecraft:birch_forest": "2025-05-07 15:23:26 -0300",
+      "minecraft:stony_shore": "2025-05-21 10:16:57 -0300",
       "minecraft:lush_caves": "2025-05-07 15:23:35 -0300",
       "minecraft:plains": "2025-05-07 10:04:27 -0300"
     },
     "done": false
-  },
-  "biomesoplenty:recipes/misc/purple_dye_from_violet": {
-    "criteria": {
-      "has_violet": "2025-05-07 09:57:26 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/building_blocks/magic_wood": {
-    "criteria": {
-      "has_log": "2025-05-07 09:58:30 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/building_blocks/magic_planks": {
-    "criteria": {
-      "has_logs": "2025-05-07 09:58:30 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/redstone/magic_door": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/redstone/magic_pressure_plate": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/redstone/magic_fence_gate": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/redstone/magic_trapdoor": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/redstone/magic_button": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/building_blocks/magic_slab": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/decorations/magic_sign": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/building_blocks/magic_stairs": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/decorations/magic_fence": {
-    "criteria": {
-      "has_planks": "2025-05-07 09:59:41 -0300"
-    },
-    "done": true
   },
   "minecraft:recipes/building_blocks/polished_blackstone_stairs": {
     "criteria": {
@@ -738,61 +594,7 @@
     },
     "done": true
   },
-  "biomeswevegone:recipes/transportation/holly_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/willow_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/willow_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/maple_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/sakura_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/pine_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/fir_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/cherry_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/umbran_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/florus_boat": {
     "criteria": {
       "in_water": "2025-05-07 10:01:39 -0300"
     },
@@ -804,25 +606,7 @@
     },
     "done": true
   },
-  "biomesoplenty:recipes/transportation/maple_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/dead_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/magic_boat": {
     "criteria": {
       "in_water": "2025-05-07 10:01:39 -0300"
     },
@@ -840,169 +624,13 @@
     },
     "done": true
   },
-  "biomesoplenty:recipes/transportation/redwood_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/blue_enchanted_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/rainbow_eucalyptus_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
       "in_water": "2025-05-07 10:01:39 -0300"
     },
     "done": true
   },
-  "biomeswevegone:recipes/transportation/witch_hazel_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/jacaranda_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/hellbark_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/palm_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/jacaranda_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/mahogany_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/zelkova_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/palm_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/green_enchanted_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/empyreal_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/spirit_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/mahogany_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/ironwood_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/baobab_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/aspen_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomesoplenty:recipes/transportation/pine_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/skyris_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/fir_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/redwood_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/white_mangrove_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/cypress_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/cika_boat": {
-    "criteria": {
-      "in_water": "2025-05-07 10:01:39 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:recipes/transportation/ebony_boat": {
     "criteria": {
       "in_water": "2025-05-07 10:01:39 -0300"
     },
@@ -1721,6 +1349,294 @@
   "minecraft:adventure/minecraft_trials_edition": {
     "criteria": {
       "minecraft_trials_edition": "2025-05-07 15:23:36 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_pink": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_slimey": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "mekanism:root": {
+    "criteria": {
+      "automatic": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "enderio:recipes/misc/fluid_tank": {
+    "criteria": {
+      "has_ingredient": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_explosive": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_dropping_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_detection_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "enderio:recipes/misc/stone_gear": {
+    "criteria": {
+      "has_ingredient": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/item_transporter_type": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_bouncing_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_crimed": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_culinary": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2025-05-21 10:23:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/fluid_extractor": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_insertion_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_death": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2025-05-21 10:23:35 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/fluid_transporter_type": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/machine_frame_pity": {
+    "criteria": {
+      "has_item": "2025-05-21 10:23:35 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/pitiful_generator": {
+    "criteria": {
+      "has_item": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_potion": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/infinity_backpack": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_netherstar": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_meatallurgic": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_frosty": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2025-05-21 10:22:18 -0300"
+    },
+    "done": true
+  },
+  "enderio:recipes/misc/stick": {
+    "criteria": {
+      "has_ingredient": "2025-05-21 10:23:35 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_rocket": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/iron_gear": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_magma": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_ender": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_halitosis": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_furnace": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/world_transporter_type": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/mycelial_disenchantment": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_splitting_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2025-05-21 10:17:39 -0300"
+    },
+    "done": true
+  },
+  "enderio:recipes/misc/pressurized_fluid_tank": {
+    "criteria": {
+      "has_ingredient": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_extraction_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/latex_processing_unit": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
+    },
+    "done": true
+  },
+  "industrialforegoing:recipes/misc/conveyor_blinking_upgrade": {
+    "criteria": {
+      "has_item": "2025-05-21 10:16:12 -0300"
     },
     "done": true
   },

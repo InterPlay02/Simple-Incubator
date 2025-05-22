@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "thecnology",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "Blocks.CALIBRATED_SCULK_SENSOR"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "CUSTOM:RangeUpdateModuleMk3"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RangeUpdateModuleMk4"
+    },
+    "name": "update_module_mk_4_recipe",
+    "namespace": "mod"
+  }
+}

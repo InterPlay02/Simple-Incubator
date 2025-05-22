@@ -16,5 +16,23 @@
         "stream": false
       }
     ]
+  },
+  "incubator_update": {
+    "subtitle": "subtitles.incubator_update",
+    "sounds": [
+      {
+        "name": "simple_incubator:incubator_update",
+        "stream": false
+      }
+    ]
+  },
+  "transmitter_update": {
+    "subtitle": "subtitles.transmitter_update",
+    "sounds": [
+      {
+        "name": "simple_incubator:transmitter_update",
+        "stream": false
+      }
+    ]
   }
 }

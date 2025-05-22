@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "machines",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": "Items.REDSTONE_TORCH"
+      },
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": "Blocks.CALIBRATED_SCULK_SENSOR"
+      },
+      {
+        "value": "Blocks.BEACON"
+      },
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Blocks.RESPAWN_ANCHOR"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IncubationReceiver"
+    },
+    "name": "incubation_receiver_recipe",
+    "namespace": "mod"
+  }
+}

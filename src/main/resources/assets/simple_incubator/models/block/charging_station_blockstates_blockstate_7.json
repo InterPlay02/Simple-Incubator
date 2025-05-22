@@ -1,0 +1,9 @@
+{
+  "parent": "simple_incubator:custom/incubationtable_chargingstationfilledopenempty",
+  "textures": {
+    "all": "simple_incubator:block/incubation_table",
+    "particle": "simple_incubator:block/incubation_table",
+    "theWholeTexture": "simple_incubator:block/incubation_table"
+  },
+  "render_type": "cutout_mipped"
+}

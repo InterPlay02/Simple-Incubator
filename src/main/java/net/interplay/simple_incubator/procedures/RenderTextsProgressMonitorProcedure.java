@@ -295,14 +295,25 @@ public class RenderTextsProgressMonitorProcedure {
 												: Direction.NORTH;
 									}
 								}.getDirection(blockstateiterator)) == Direction.NORTH) {
-									totalSeconds = (new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), "hatchTimer")) / 20;
+									if ((world.getBlockState(BlockPos.containing(positionx, positiony, positionz + 1))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx, positiony, positionz + 1), "hatchTimer")) / 20;
+									} else {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), "hatchTimer")) / 20;
+									}
 									renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.progress_monitor.working").getString()), (positionx + 0.251), (positiony + 0.495), (positionz + 0.5), (float) directionNorth, (float) (-22.5),
 											0, (float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									if (new Object() {
@@ -352,6 +363,17 @@ public class RenderTextsProgressMonitorProcedure {
 										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
 												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
 												(positionx + 0.32), (positiony + 0.335), (positionz + 0.5), (float) directionNorth, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
+									} else if (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, BlockPos.containing(positionx, positiony, positionz + 1), "greenLight") == 1) {
+										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
+												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
+												(positionx + 0.32), (positiony + 0.335), (positionz + 0.5), (float) directionNorth, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.stopped").getString()), (positionx + 0.32), (positiony + 0.335), (positionz + 0.5), (float) directionNorth, (float) (-22.5), 0,
 												(float) 0.005, 255 << 24 | 0 << 16 | 35 << 8 | 110, false);
@@ -368,7 +390,7 @@ public class RenderTextsProgressMonitorProcedure {
 											return 0;
 										}
 									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0) > 0) {
-										renderTexts(("" + ((new Object() {
+										renderTexts(("" + (((new Object() {
 											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 												if (world instanceof ILevelExtension _ext) {
 													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -377,11 +399,68 @@ public class RenderTextsProgressMonitorProcedure {
 												}
 												return ItemStack.EMPTY;
 											}
-										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0)).getDisplayName().getString())), (positionx + 0.365), (positiony + 0.225), (positionz + 0.5), (float) directionNorth,
-												(float) (-22.5), 0, (float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.365), (positiony + 0.225), (positionz + 0.5),
+												(float) directionNorth, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony, positionz + 1), 0) > 0) {
+										renderTexts(("" + (((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony, positionz + 1), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony, positionz + 1), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony, positionz + 1), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.365), (positiony + 0.225), (positionz + 0.5),
+												(float) directionNorth, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.egg_name").getString()), (positionx + 0.365), (positiony + 0.225), (positionz + 0.5), (float) directionNorth, (float) (-22.5),
-												0, (float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+												0, (float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
 								} else if ((new Object() {
 									public Direction getDirection(BlockState _bs) {
@@ -394,14 +473,25 @@ public class RenderTextsProgressMonitorProcedure {
 												: Direction.NORTH;
 									}
 								}.getDirection(blockstateiterator)) == Direction.SOUTH) {
-									totalSeconds = (new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), "hatchTimer")) / 20;
+									if ((world.getBlockState(BlockPos.containing(positionx, positiony, positionz - 1))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx, positiony, positionz - 1), "hatchTimer")) / 20;
+									} else {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), "hatchTimer")) / 20;
+									}
 									renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.progress_monitor.working").getString()), (positionx + 0.749), (positiony + 0.495), (positionz + 0.5), (float) directionSouth, (float) (-22.5),
 											0, (float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									if (new Object() {
@@ -451,6 +541,17 @@ public class RenderTextsProgressMonitorProcedure {
 										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
 												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
 												(positionx + 0.68), (positiony + 0.335), (positionz + 0.5), (float) directionSouth, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
+									} else if (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, BlockPos.containing(positionx, positiony, positionz - 1), "greenLight") == 1) {
+										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
+												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
+												(positionx + 0.68), (positiony + 0.335), (positionz + 0.5), (float) directionSouth, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.stopped").getString()), (positionx + 0.68), (positiony + 0.335), (positionz + 0.5), (float) directionSouth, (float) (-22.5), 0,
 												(float) 0.005, 255 << 24 | 0 << 16 | 35 << 8 | 110, false);
@@ -467,7 +568,7 @@ public class RenderTextsProgressMonitorProcedure {
 											return 0;
 										}
 									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0) > 0) {
-										renderTexts(("" + ((new Object() {
+										renderTexts(("" + (((new Object() {
 											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 												if (world instanceof ILevelExtension _ext) {
 													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -476,11 +577,68 @@ public class RenderTextsProgressMonitorProcedure {
 												}
 												return ItemStack.EMPTY;
 											}
-										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0)).getDisplayName().getString())), (positionx + 0.635), (positiony + 0.225), (positionz + 0.5), (float) directionSouth,
-												(float) (-22.5), 0, (float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.635), (positiony + 0.225), (positionz + 0.5),
+												(float) directionSouth, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony, positionz - 1), 0) > 0) {
+										renderTexts(("" + (((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony, positionz - 1), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony, positionz - 1), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx, positiony, positionz - 1), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.635), (positiony + 0.225), (positionz + 0.5),
+												(float) directionSouth, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.egg_name").getString()), (positionx + 0.635), (positiony + 0.225), (positionz + 0.5), (float) directionSouth, (float) (-22.5),
-												0, (float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+												0, (float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
 								} else if ((new Object() {
 									public Direction getDirection(BlockState _bs) {
@@ -493,14 +651,25 @@ public class RenderTextsProgressMonitorProcedure {
 												: Direction.NORTH;
 									}
 								}.getDirection(blockstateiterator)) == Direction.EAST) {
-									totalSeconds = (new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), "hatchTimer")) / 20;
+									if ((world.getBlockState(BlockPos.containing(positionx - 1, positiony, positionz))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx - 1, positiony, positionz), "hatchTimer")) / 20;
+									} else {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), "hatchTimer")) / 20;
+									}
 									renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.progress_monitor.working").getString()), (positionx + 0.5), (positiony + 0.495), (positionz + 0.251), (float) directionEast, (float) (-22.5),
 											0, (float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									if (new Object() {
@@ -550,6 +719,17 @@ public class RenderTextsProgressMonitorProcedure {
 										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
 												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
 												(positionx + 0.5), (positiony + 0.335), (positionz + 0.32), (float) directionEast, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
+									} else if (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, BlockPos.containing(positionx - 1, positiony, positionz), "greenLight") == 1) {
+										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
+												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
+												(positionx + 0.5), (positiony + 0.335), (positionz + 0.32), (float) directionEast, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.stopped").getString()), (positionx + 0.5), (positiony + 0.335), (positionz + 0.32), (float) directionEast, (float) (-22.5), 0,
 												(float) 0.005, 255 << 24 | 0 << 16 | 35 << 8 | 110, false);
@@ -566,7 +746,7 @@ public class RenderTextsProgressMonitorProcedure {
 											return 0;
 										}
 									}.getAmount(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0) > 0) {
-										renderTexts(("" + ((new Object() {
+										renderTexts(("" + (((new Object() {
 											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 												if (world instanceof ILevelExtension _ext) {
 													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -575,21 +755,89 @@ public class RenderTextsProgressMonitorProcedure {
 												}
 												return ItemStack.EMPTY;
 											}
-										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0)).getDisplayName().getString())), (positionx + 0.5), (positiony + 0.225), (positionz + 0.365), (float) directionEast,
-												(float) (-22.5), 0, (float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.5), (positiony + 0.225), (positionz + 0.365),
+												(float) directionEast, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx - 1, positiony, positionz), 0) > 0) {
+										renderTexts(("" + (((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony, positionz), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony, positionz), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx - 1, positiony, positionz), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.5), (positiony + 0.225), (positionz + 0.365),
+												(float) directionEast, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.egg_name").getString()), (positionx + 0.5), (positiony + 0.225), (positionz + 0.365), (float) directionEast, (float) (-22.5), 0,
-												(float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+												(float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
 								} else {
-									totalSeconds = (new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), "hatchTimer")) / 20;
+									if ((world.getBlockState(BlockPos.containing(positionx + 1, positiony, positionz))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx + 1, positiony, positionz), "hatchTimer")) / 20;
+									} else {
+										totalSeconds = (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), "hatchTimer")) / 20;
+									}
 									renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.progress_monitor.working").getString()), (positionx + 0.5), (positiony + 0.495), (positionz + 0.749), (float) directionWest, (float) (-22.5),
 											0, (float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									if (new Object() {
@@ -639,6 +887,17 @@ public class RenderTextsProgressMonitorProcedure {
 										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
 												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
 												(positionx + 0.5), (positiony + 0.335), (positionz + 0.68), (float) directionWest, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
+									} else if (new Object() {
+										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getDouble(tag);
+											return -1;
+										}
+									}.getValue(world, BlockPos.containing(positionx + 1, positiony, positionz), "greenLight") == 1) {
+										renderTexts((Component.translatable("block.simple_incubator.progress_monitor.incubating").getString() + ": " + (int) (totalSeconds / 60)
+												+ Component.translatable("item.simple_incubator.eggs.tooltip_minutes").getString() + (int) (totalSeconds % 60) + Component.translatable("item.simple_incubator.eggs.tooltip_seconds").getString()),
+												(positionx + 0.5), (positiony + 0.335), (positionz + 0.68), (float) directionWest, (float) (-22.5), 0, (float) 0.005, 255 << 24 | 255 << 16 | 180 << 8 | 0, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.stopped").getString()), (positionx + 0.5), (positiony + 0.335), (positionz + 0.68), (float) directionWest, (float) (-22.5), 0,
 												(float) 0.005, 255 << 24 | 0 << 16 | 35 << 8 | 110, false);
@@ -655,7 +914,7 @@ public class RenderTextsProgressMonitorProcedure {
 											return 0;
 										}
 									}.getAmount(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0) > 0) {
-										renderTexts(("" + ((new Object() {
+										renderTexts(("" + (((new Object() {
 											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 												if (world instanceof ILevelExtension _ext) {
 													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -664,11 +923,68 @@ public class RenderTextsProgressMonitorProcedure {
 												}
 												return ItemStack.EMPTY;
 											}
-										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0)).getDisplayName().getString())), (positionx + 0.5), (positiony + 0.225), (positionz + 0.635), (float) directionWest,
-												(float) (-22.5), 0, (float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.5), (positiony + 0.225), (positionz + 0.635),
+												(float) directionWest, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx + 1, positiony, positionz), 0) > 0) {
+										renderTexts(("" + (((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony, positionz), 0)).getDisplayName().getString()).substring((int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony, positionz), 0)).getDisplayName().getString()).indexOf("[") + "[".length(), (int) ((new Object() {
+											public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+												if (world instanceof ILevelExtension _ext) {
+													IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+													if (_itemHandler != null)
+														return _itemHandler.getStackInSlot(slotid).copy();
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack(world, BlockPos.containing(positionx + 1, positiony, positionz), 0)).getDisplayName().getString()).indexOf("]")))), (positionx + 0.5), (positiony + 0.225), (positionz + 0.635),
+												(float) directionWest, (float) (-22.5), 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									} else {
 										renderTexts(("" + Component.translatable("block.simple_incubator.progress_monitor.egg_name").getString()), (positionx + 0.5), (positiony + 0.225), (positionz + 0.635), (float) directionWest, (float) (-22.5), 0,
-												(float) 0.005, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+												(float) 0.004, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
 								}
 							}

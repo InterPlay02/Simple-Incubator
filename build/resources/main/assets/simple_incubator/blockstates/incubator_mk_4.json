@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simple_incubator:block/incubator_mk_4"
+    },
+    "facing=east": {
+      "model": "simple_incubator:block/incubator_mk_4",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simple_incubator:block/incubator_mk_4",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simple_incubator:block/incubator_mk_4",
+      "y": 270
+    }
+  }
+}

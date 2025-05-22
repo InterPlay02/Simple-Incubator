@@ -4,17 +4,20 @@
   "category": "redstone",
   "pattern": [
     " a ",
-    "aba",
-    "aca"
+    "bcb",
+    "ada"
   ],
   "key": {
     "a": {
       "item": "minecraft:iron_ingot"
     },
     "b": {
-      "item": "minecraft:redstone_block"
+      "item": "minecraft:lapis_lazuli"
     },
     "c": {
+      "item": "minecraft:redstone_block"
+    },
+    "d": {
       "item": "minecraft:iron_block"
     }
   },

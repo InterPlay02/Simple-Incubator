@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "technology",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.MAGMA"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "CUSTOM:EnergyUpdateModuleMk3"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnergyUpdateModuleMk4"
+    },
+    "name": "energy_module_mk_4_recipe",
+    "namespace": "mod"
+  }
+}

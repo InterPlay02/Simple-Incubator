@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "simple_incubator:nest_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 101,
+    "separation": 5,
+    "salt": 525289935
+  }
+}

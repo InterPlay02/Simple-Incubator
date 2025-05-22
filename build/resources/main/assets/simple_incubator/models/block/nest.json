@@ -1,0 +1,9 @@
+{
+  "parent": "simple_incubator:custom/nest",
+  "textures": {
+    "all": "simple_incubator:block/nest",
+    "particle": "simple_incubator:block/nest",
+    "0": "simple_incubator:block/nest"
+  },
+  "render_type": "cutout_mipped"
+}

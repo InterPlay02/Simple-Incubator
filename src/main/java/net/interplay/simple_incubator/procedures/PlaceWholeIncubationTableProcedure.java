@@ -7,11 +7,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -21,6 +23,13 @@ public class PlaceWholeIncubationTableProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		if ((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName")).equals("")) {
+			{
+				final String _tagName = "incubatorRegistryName";
+				final String _tagValue = (BuiltInRegistries.BLOCK.getKey(SimpleIncubatorModBlocks.INCUBATOR.get()).toString());
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putString(_tagName, _tagValue));
+			}
+		}
 		if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.UP) {
 			if ((entity.getDirection()) == Direction.NORTH) {
 				world.setBlock(BlockPos.containing(x, y + 1, z), SimpleIncubatorModBlocks.STORAGE_MIDDLE.get().defaultBlockState(), 3);
@@ -51,7 +60,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x + 1, y + 1, z), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x + 1, y + 1, z), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.SOUTH;
 					BlockPos _pos = BlockPos.containing(x + 1, y + 1, z);
@@ -150,7 +160,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x - 1, y + 1, z), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x - 1, y + 1, z), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.NORTH;
 					BlockPos _pos = BlockPos.containing(x - 1, y + 1, z);
@@ -249,7 +260,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x, y + 1, z + 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z + 1), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.WEST;
 					BlockPos _pos = BlockPos.containing(x, y + 1, z + 1);
@@ -348,7 +360,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x, y + 1, z - 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z - 1), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.EAST;
 					BlockPos _pos = BlockPos.containing(x, y + 1, z - 1);
@@ -449,7 +462,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x + 1, y - 2, z), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x + 1, y - 2, z), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.SOUTH;
 					BlockPos _pos = BlockPos.containing(x + 1, y - 2, z);
@@ -548,7 +562,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x - 1, y - 2, z), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x - 1, y - 2, z), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.NORTH;
 					BlockPos _pos = BlockPos.containing(x - 1, y - 2, z);
@@ -647,7 +662,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x, y - 2, z + 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y - 2, z + 1), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.WEST;
 					BlockPos _pos = BlockPos.containing(x, y - 2, z + 1);
@@ -746,7 +762,8 @@ public class PlaceWholeIncubationTableProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-				world.setBlock(BlockPos.containing(x, y - 2, z - 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y - 2, z - 1), BuiltInRegistries.BLOCK
+						.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.EAST;
 					BlockPos _pos = BlockPos.containing(x, y - 2, z - 1);
@@ -846,7 +863,9 @@ public class PlaceWholeIncubationTableProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 				}
 			}
-			world.setBlock(BlockPos.containing(x - 1, y, z - 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x - 1, y, z - 1),
+					BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(),
+					3);
 			{
 				Direction _dir = Direction.NORTH;
 				BlockPos _pos = BlockPos.containing(x - 1, y, z - 1);
@@ -945,7 +964,9 @@ public class PlaceWholeIncubationTableProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 				}
 			}
-			world.setBlock(BlockPos.containing(x + 1, y, z + 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x + 1, y, z + 1),
+					BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(),
+					3);
 			{
 				Direction _dir = Direction.SOUTH;
 				BlockPos _pos = BlockPos.containing(x + 1, y, z + 1);
@@ -1044,7 +1065,9 @@ public class PlaceWholeIncubationTableProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 				}
 			}
-			world.setBlock(BlockPos.containing(x + 1, y, z - 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x + 1, y, z - 1),
+					BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(),
+					3);
 			{
 				Direction _dir = Direction.EAST;
 				BlockPos _pos = BlockPos.containing(x + 1, y, z - 1);
@@ -1143,7 +1166,9 @@ public class PlaceWholeIncubationTableProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 				}
 			}
-			world.setBlock(BlockPos.containing(x - 1, y, z + 1), SimpleIncubatorModBlocks.INCUBATOR.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x - 1, y, z + 1),
+					BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("incubatorRegistryName"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState(),
+					3);
 			{
 				Direction _dir = Direction.WEST;
 				BlockPos _pos = BlockPos.containing(x - 1, y, z + 1);

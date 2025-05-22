@@ -296,6 +296,11 @@ public class RenderTextOnScreenProcedure {
 									renderTexts((Component.translatable("block.simple_incubator.button_panel.small_title").getString()), (positionx
 											- (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.small_title").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 4.5 + 0.75),
 											(positiony + 0.295), (positionz + 0.63), (float) rotationNorth, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									if ((world.getBlockState(BlockPos.containing(positionx - 1, positiony, positionz))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										renderTexts((Component.translatable("block.simple_incubator.button_panel.transmitter").getString()), (positionx
+												+ (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.transmitter").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 2 + 0.25),
+												(positiony + 0.275), (positionz + 0.59), (float) rotationNorth, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									}
 									if (new Object() {
 										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 											if (world instanceof ILevelExtension _ext) {
@@ -305,10 +310,37 @@ public class RenderTextOnScreenProcedure {
 											}
 											return 0;
 										}
-									}.getAmount(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0) == 0) {
+									}.getAmount(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0) == 0 && new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx - 1, positiony, positionz), 0) == 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.text_empty_slot").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationNorth, -65, 0,
 												(float) 0.008, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
-									} else {
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx - 1, positiony - 1, positionz), 0) > 0 || new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx - 1, positiony, positionz), 0) > 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.egg_detected").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationNorth, -65, 0,
 												(float) 0.0062, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
@@ -343,6 +375,11 @@ public class RenderTextOnScreenProcedure {
 									renderTexts((Component.translatable("block.simple_incubator.button_panel.small_title").getString()), (positionx
 											+ (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.small_title").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 4.5 + 0.25),
 											(positiony + 0.295), (positionz + 0.37), (float) rotationSouth, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									if ((world.getBlockState(BlockPos.containing(positionx + 1, positiony, positionz))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										renderTexts((Component.translatable("block.simple_incubator.button_panel.transmitter").getString()), (positionx
+												- (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.transmitter").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 2 + 0.75),
+												(positiony + 0.275), (positionz + 0.41), (float) rotationSouth, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									}
 									if (new Object() {
 										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 											if (world instanceof ILevelExtension _ext) {
@@ -352,10 +389,37 @@ public class RenderTextOnScreenProcedure {
 											}
 											return 0;
 										}
-									}.getAmount(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0) == 0) {
+									}.getAmount(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0) == 0 && new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx + 1, positiony, positionz), 0) == 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.text_empty_slot").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationSouth, -65, 0,
 												(float) 0.008, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
-									} else {
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx + 1, positiony - 1, positionz), 0) > 0 || new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx + 1, positiony, positionz), 0) > 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.egg_detected").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationSouth, -65, 0,
 												(float) 0.0062, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
@@ -390,6 +454,11 @@ public class RenderTextOnScreenProcedure {
 									renderTexts((Component.translatable("block.simple_incubator.button_panel.small_title").getString()), (positionx + 0.37), (positiony + 0.295), (positionz
 											- (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.small_title").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 4.5 + 0.75),
 											(float) rotationEast, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									if ((world.getBlockState(BlockPos.containing(positionx, positiony, positionz - 1))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										renderTexts((Component.translatable("block.simple_incubator.button_panel.transmitter").getString()), (positionx + 0.41), (positiony + 0.275), (positionz
+												+ (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.transmitter").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 2 + 0.25),
+												(float) rotationEast, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									}
 									if (new Object() {
 										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 											if (world instanceof ILevelExtension _ext) {
@@ -399,10 +468,37 @@ public class RenderTextOnScreenProcedure {
 											}
 											return 0;
 										}
-									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0) == 0) {
+									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0) == 0 && new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony, positionz - 1), 0) == 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.text_empty_slot").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationEast, -65, 0,
 												(float) 0.008, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
-									} else {
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz - 1), 0) > 0 || new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony, positionz - 1), 0) > 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.egg_detected").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationEast, -65, 0,
 												(float) 0.0062, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}
@@ -427,6 +523,11 @@ public class RenderTextOnScreenProcedure {
 									renderTexts((Component.translatable("block.simple_incubator.button_panel.small_title").getString()), (positionx + 0.63), (positiony + 0.295), (positionz
 											+ (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.small_title").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 4.5 + 0.25),
 											(float) rotationWest, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									if ((world.getBlockState(BlockPos.containing(positionx, positiony, positionz + 1))).getBlock() == SimpleIncubatorModBlocks.INCUBATION_TRANSMITTER.get()) {
+										renderTexts((Component.translatable("block.simple_incubator.button_panel.transmitter").getString()), (positionx + 0.59), (positiony + 0.275), (positionz
+												+ (Minecraft.getInstance().font.width((Component.translatable("block.simple_incubator.button_panel.transmitter").getString())) * Minecraft.getInstance().getWindow().getGuiScale() * 0.003) / 2 + 0.05),
+												(float) rotationWest, -65, 0, (float) 0.003, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
+									}
 									if (new Object() {
 										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 											if (world instanceof ILevelExtension _ext) {
@@ -436,10 +537,37 @@ public class RenderTextOnScreenProcedure {
 											}
 											return 0;
 										}
-									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0) == 0) {
+									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0) == 0 && new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony, positionz + 1), 0) == 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.text_empty_slot").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationWest, -65, 0,
 												(float) 0.008, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
-									} else {
+									} else if (new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony - 1, positionz + 1), 0) > 0 || new Object() {
+										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+											if (world instanceof ILevelExtension _ext) {
+												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+												if (_itemHandler != null)
+													return _itemHandler.getStackInSlot(slotid).getCount();
+											}
+											return 0;
+										}
+									}.getAmount(world, BlockPos.containing(positionx, positiony, positionz + 1), 0) > 0) {
 										renderTexts(("\u00A7l" + Component.translatable("block.simple_incubator.button_panel.egg_detected").getString()), (positionx + 0.5), (positiony + 0.24), (positionz + 0.5), (float) rotationWest, -65, 0,
 												(float) 0.0062, 255 << 24 | 10 << 16 | 10 << 8 | 10, false);
 									}

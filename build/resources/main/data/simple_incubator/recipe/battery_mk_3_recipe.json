@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machinery",
+  "category": "redstone",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:red_dye"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    },
+    "d": {
+      "item": "minecraft:ancient_debris"
+    }
+  },
+  "result": {
+    "id": "simple_incubator:battery_mk_3",
+    "count": 1
+  }
+}

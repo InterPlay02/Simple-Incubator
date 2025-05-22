@@ -1,19 +1,25 @@
 {
   "modConfigs": {
     "hatchTimerMin": 700,
-    "description1": {
-      "1a": "This number determines how long (in ticks) an egg will take to hatch (at minimum).",
-      "1b": "The default value is 700, which is equivalent to 35 seconds."
-    },
     "hatchTimerMax": 6000,
-    "description2": {
-      "2a": "This number determines how long (in ticks) an egg will take to hatch (at max).",
-      "2b": "The default value is 6000, which is equivalent to five minutes."
+    "description1": {
+      "1a": "These numbers determine how long (in ticks) an egg will take to hatch.",
+      "1b": "The default values are 700 minimum (35 seconds) and 6000 max (5 minutes)."
     },
     "chanceToDropEgg": 0.005,
+    "description2": {
+      "2a": "This number determines how often a mob will drop their spawn egg.",
+      "2b": "The default number is 0.005, which is 0.5% chance to drop. Higher values means higher chances to drop."
+    },
+    "enableMobspawnerDrop": true,
     "description3": {
-      "3a": "This number determines how often a mob will drop their spawn egg.",
-      "3b": "The default number is 0.005, which is 0.5% chance to drop. Higher values means higher chances to drop."
+      "3a": "This configration determines if the mobspawner should be dropped when mined.",
+      "3b": "Set it to true or false."
+    },
+    "enableSpawnEggDrop": true,
+    "description4": {
+      "4a": "This configration determines if Spawn Eggs should be dropped when you kill an entity.",
+      "4b": "Set it to true or false."
     }
   }
 }

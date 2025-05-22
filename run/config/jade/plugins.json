@@ -59,15 +59,22 @@
     "entity": true,
     "entity_variant": true
   },
+  "mekanism": {
+    "chemical": true,
+    "remove_builtin": true,
+    "fluid": true,
+    "energy": true,
+    "tooltip_renderer": true
+  },
   "jade": {
     "coordinates.rel": false,
-    "registry_name.special": false,
-    "block_states": false,
+    "registry_name.special": true,
+    "block_states": true,
     "distance": false,
     "block_face": false,
     "coordinates": false,
-    "registry_name": "OFF",
-    "block_properties": false,
+    "registry_name": "ON",
+    "block_properties": true,
     "mod_name": false
   }
 }

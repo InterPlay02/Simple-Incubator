@@ -1,0 +1,202 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:simple_incubator:eggs"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "ResetSpeed"
+          },
+          "x": 205,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:simple_incubator:update_modules"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "ResetSpeed"
+          },
+          "x": 232,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_incubation_transmitter",
+          "text": {
+            "fixedValue": "Incubation Transmitter"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "antenaloadingbar.png",
+          "spritesCount": 10,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "AntenaLoadingBar"
+          },
+          "x": 135,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sending",
+          "text": {
+            "fixedValue": "Sending"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 106,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "red_and_green_lights.png",
+          "spritesCount": 2,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GreenLight"
+          },
+          "x": 131,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spawn_speed",
+          "text": {
+            "fixedValue": "Speed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSpeedButton"
+          },
+          "x": 242,
+          "y": 101,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_x1",
+          "text": {
+            "fixedValue": "-1",
+            "name": "SpeedLabel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSpeedButton"
+          },
+          "x": 223,
+          "y": 101,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_speedbutton",
+          "image": "speedbutton.png",
+          "hoveredImage": "speedbuttonhover.png",
+          "onClick": {
+            "name": "IncreaseDecreseSpeed"
+          },
+          "displayCondition": {
+            "name": "ShowSpeedButton"
+          },
+          "x": 206,
+          "y": 97,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_adjust_the_spawn_frequency_max",
+          "text": {
+            "fixedValue": "Adjust the spawn frequency. (Max: 20x)"
+          },
+          "displayCondition": {
+            "name": "ShowSpeedButton"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 198,
+          "y": 97,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "ShowSpeedButton"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

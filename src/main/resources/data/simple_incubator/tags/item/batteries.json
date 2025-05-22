@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "simple_incubator:battery_empty",
+    "simple_incubator:battery",
+    "simple_incubator:battery_mk_2",
+    "simple_incubator:battery_mk_3"
+  ]
+}
