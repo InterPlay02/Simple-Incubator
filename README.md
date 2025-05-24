@@ -29,7 +29,7 @@ After launching the game once with the mod installed, a config file will be gene
 ## 🔗 Links
 
 [![CurseForge Version](https://img.shields.io/curseforge/v/1260856?logo=curseforge&color=orange)](https://www.curseforge.com/minecraft/mc-mods/simple-incubator)  
-[![Modrinth](https://img.shields.io/badge/Modrinth-Soon-brightgreen?logo=modrinth)](https://modrinth.com/)  
+[![Static Badge](https://img.shields.io/badge/Modrinth-Simple%20Incubator%20v1.1-brightgreen?logo=modrinth)](https://modrinth.com/project/zsWivhY4)  
 [![Static Badge](https://img.shields.io/badge/badge-All%20Rights%20Reserved-grey?logo=github&label=License&labelColor=gray&color=blue)](https://github.com/InterPlay02/Simple-Incubator/blob/principal/License.md)
 
 - 💬 [Discord](https://discord.com/)
